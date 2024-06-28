@@ -12,8 +12,6 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
-import { YouTube } from 'astro-embed';
-
 const metadata = {
   title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
   ignoreTitleTemplate: true,
@@ -46,7 +44,7 @@ const metadata = {
         <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
         + Tailwind CSS.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-gray-600">AstroWind: Production-ready.</span>
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
       Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
       Blogs.
     </Fragment>
@@ -106,7 +104,6 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
-    isDark
     isReversed
     tagline="Inside template"
     title="AstroWind's Blueprint: Fun Meets Functionality!"
@@ -138,14 +135,13 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
   <!-- Content Widget **************** -->
 
   <Content
-    isDark
     isAfterContent
     items={[
       {
@@ -168,34 +164,21 @@ const metadata = {
           'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
       },
     ]}
-    
+    image={{
+      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      alt: 'Blueprint Image',
+    }}
   >
     <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
 
-    <!-- WE CAN DEFINE INSIDE "Content" image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }} OR WE CAN DEFINE YOUTUBE INSIDE IMAGE SLOT-->
-
-    <Fragment slot="image">
-      <YouTube id="gxBkghlglTg" title="Astro just Launched.... Could it be the ultimate web framework?" />
-      <style is:inline>
-        lite-youtube {
-          margin: 0 auto;
-          max-width: 100%;
-        }
-      </style>
-    </Fragment>
-
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
   <!-- Content Widget **************** -->
 
   <Content
-    isDark
     isReversed
     isAfterContent
     items={[
@@ -227,7 +210,7 @@ const metadata = {
     <Fragment slot="content">Designed to foster growth and success.</Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -243,7 +226,7 @@ const metadata = {
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
+        title: 'Step 2: <span class="font-medium">Add content</span>',
         description:
           "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
         icon: 'tabler:letter-case',
@@ -266,71 +249,8 @@ const metadata = {
   />
 
   <!-- Features2 Widget ************** -->
-  <Features2
-  isDark
-  title="Most used widgets"
-  subtitle="Provides frequently used components for building websites using Tailwind CSS"
-  tagline="Components"
-  items={[
-    {
-      title: 'Headers',
-      description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-      icon: 'tabler:template',
-    },
-    {
-      title: 'Heros',
-      description:
-        "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-      icon: 'tabler:slideshow',
-    },
-    {
-      title: 'Features',
-      description:
-        'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-      icon: 'tabler:discount-check',
-    },
-    {
-      title: 'Content',
-      description:
-        "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-      icon: 'tabler:file-description',
-    },
-    {
-      title: 'Call-to-Action',
-      description:
-        'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-      icon: 'tabler:speakerphone',
-    },
-    {
-      title: 'Pricing',
-      description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-      icon: 'tabler:receipt-2',
-    },
-    {
-      title: 'Testimonial',
-      description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-      icon: 'tabler:message-chatbot',
-    },
-    {
-      title: 'Contact',
-      description:
-        'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-      icon: 'tabler:address-book',
-    },
-    {
-      title: 'Footers',
-      description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-      icon: 'tabler:database',
-    },
-  ]}
->
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
-  </Fragment>
-</Features2>
 
   <Features2
-    
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     tagline="Components"
@@ -338,61 +258,59 @@ const metadata = {
       {
         title: 'Headers',
         description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'tabler:template',
+        icon: 'flat-color-icons:template',
       },
       {
         title: 'Heros',
         description:
           "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'tabler:slideshow',
+        icon: 'flat-color-icons:gallery',
       },
       {
         title: 'Features',
         description:
           'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'tabler:discount-check',
+        icon: 'flat-color-icons:approval',
       },
       {
         title: 'Content',
         description:
           "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'tabler:file-description',
+        icon: 'flat-color-icons:document',
       },
       {
         title: 'Call-to-Action',
         description:
           'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'tabler:speakerphone',
+        icon: 'flat-color-icons:advertising',
       },
       {
         title: 'Pricing',
         description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'tabler:receipt-2',
+        icon: 'flat-color-icons:currency-exchange',
       },
       {
         title: 'Testimonial',
         description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'tabler:message-chatbot',
+        icon: 'flat-color-icons:voice-presentation',
       },
       {
         title: 'Contact',
         description:
           'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'tabler:address-book',
+        icon: 'flat-color-icons:business-contact',
       },
       {
         title: 'Footers',
         description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'tabler:database',
+        icon: 'flat-color-icons:database',
       },
     ]}
   >
-    <!-- <Fragment slot="bg">
-      <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
-    </Fragment> -->
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
   </Features2>
-
-  
 
   <!-- HighlightedPosts Widget ******* -->
 
@@ -407,7 +325,6 @@ const metadata = {
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    isDark
     title="Frequently Asked Questions"
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
     tagline="FAQs"
@@ -444,11 +361,7 @@ const metadata = {
           "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
       },
     ]}
-  >
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-[#ce8157] dark:bg-[#A16544]"></div>
-  </Fragment>
-</FAQ>
+  />
 
   <!-- Stats Widget ****************** -->
 
