@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Sexo con K-Alma 2025
+  site: 'https://tantraparaparejas.com/'
   base: '/'
   trailingSlash: false
 
@@ -9,16 +9,16 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Sexo con K-Alma
+    template: '%s — Sexo con K-Alma'
+  description: "significa incluir la meditación en la intimidad y en la sexualidad, significa recordar y recuperar el amor, la relajación y el gozo en la relación."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Sexo con K-Alma
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/1.webp'
         width: 1200
         height: 628
     type: website
@@ -28,7 +28,7 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: es
   textDirection: ltr
 
 apps:
@@ -69,4 +69,4 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

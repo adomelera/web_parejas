@@ -16,6 +16,7 @@ const {
   isDark = false,
   classes = {},
   bg = await Astro.slots.render('bg'),
+  bottom = await Astro.slots.render('bottom'),
 } = Astro.props;
 ---
 
@@ -68,7 +69,10 @@ const {
   {
     callToAction && (
       <div class="flex justify-center mx-auto w-fit mt-8 md:mt-12 font-medium">
-        <Button {...callToAction} />
+        <slot name="bottom">
+          {bottom ? <Fragment set:html={bottom} /> : <Button {...callToAction} />}
+        </slot>
+        
       </div>
     )
   }
