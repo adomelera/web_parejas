@@ -1,0 +1,238 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+
+const metadata = {
+  title: 'Sexo con K-Alma 2025',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header"></Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    id="home"
+    title="Sexo con K-Alma"
+    tagline="Tantra para parejas"
+    actions={[{ variant: 'primary', text: 'Más información', href: "https://www.espai-ananda.com/cursos-tantra-pareja-barcelona/tantra-en-pareja-en-barcelona/" }]}
+    image={{ src: '~/assets/images/1.webp', alt: 'Love1' }}
+  >
+    <Fragment slot="subtitle">
+      <strong>Sexo con K-alma</strong>, significa incluir la meditación en la intimidad y en la sexualidad, significa recordar y recuperar el amor, la relajación y el gozo en la relación.
+      <br><br>
+      Las corazas que llevamos desde hace tiempo van cayendo para mostrar nuestra verdadera esencia a la persona con la que compartimos este momento de vida. La relación es un campo fértil, donde conseguir mucha expansión.
+    </Fragment>
+  </Hero>
+ 
+  <Features3
+    title="Our templates"
+    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'Educational',
+        description:
+          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Interior Design',
+        description:
+          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Photography',
+        description:
+          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
+        icon: 'tabler:template',
+      },
+    ]}    
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features3>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    columns={3}
+    isAfterContent={true}
+    items={[
+      {
+        title: 'E-commerce',
+        description:
+          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Blog',
+        description:
+          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Business',
+        description:
+          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Branding',
+        description:
+          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Medical',
+        description:
+          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Fashion Design',
+        description:
+          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
+        icon: 'tabler:template',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/apaisada1.webp',
+      alt: 'Love1',
+    }}
+>
+ <Fragment slot="bg">
+   <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+ </Fragment>
+</Features3>
+ <!-- Testimonials Widget *********** -->
+
+ <Testimonials
+ title="Words from real customers"
+ testimonials={[
+   {
+     testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
+     name: 'Emily Kennedy',
+     job: 'Front-end developer',
+     image: {
+       src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+       alt: 'Emily Kennedy Image',
+     },
+   },
+   {
+     testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
+     name: 'Sarah Hansen',
+     job: 'Photographer',
+     image: {
+       src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+       alt: 'Sarah Hansen Image',
+     },
+   },
+   {
+     testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
+     name: 'Mark Wilkinson',
+     job: 'Small business owner',
+     image: {
+       src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+       alt: 'Mark Wilkinson Image',
+     },
+   },
+ ]}
+ callToAction={{
+   target: '_blank',
+   text: 'More testimonials...',
+   href: 'https://github.com/onwidget/astrowind',
+   icon: 'tabler:chevron-right',
+ }}
+/>
+
+   <!-- Pricing Widget ******************* -->
+
+   <Prices
+   title="Modalidades"
+   subtitle="¿Que opcion escoges?"
+   prices={[
+     {
+       title: '4 talleres',
+       subtitle: 'de 1 dia cada uno',
+       price: 600,
+       period: 'por pareja',
+       items: [
+         {
+           description: 'De Abril a Julio',
+         },
+         {
+           description: '1 taller al mes',
+         },
+         {
+           description: 'Grupo de seguimiento',
+         },
+         {
+           description: 'Con meditaciones guiadas en video',
+         },
+       ],
+       callToAction: {
+         target: '_blank',
+         text: 'Me apunto',
+         href: '#',
+       },
+     },
+     {
+       title: 'recorrido completo',
+       subtitle: 'incluye residencial y talleres',
+       price: 1400,
+       period: 'por pareja',
+       items: [
+         {
+           description: 'De Abril a Agosto',
+         },
+         {
+           description: '',
+         },
+         {
+           description: '',
+         },
+         {
+           description: '',
+         },         
+       ],
+       callToAction: {
+         target: '_blank',
+         text: 'Me apunto',
+         href: '#',
+       },
+       hasRibbon: true,
+       ribbonTitle: 'recomendado',
+     }, 
+     {
+       title: 'Solo el residencial',
+       subtitle: 'de 3 dias',
+       price: 1000,
+       period: 'por pareja',
+       items: [
+         {
+           description: '',
+         },
+         {
+           description: '',
+         },         
+       ],
+       callToAction: {
+         target: '_blank',
+         text: 'Me apunto',
+         href: '#',
+       },
+     },    
+   ]}
+ />
+
+  <Fragment slot="footer"></Fragment>
+</Layout>
