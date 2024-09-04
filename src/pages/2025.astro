@@ -1,11 +1,13 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Prices from '~/components/widgets/Pricing.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Content from '~/components/widgets/Content.astro';
 import { YouTube } from 'astro-embed';
+import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
   title: 'Sexo con K-Alma 2025',
@@ -14,7 +16,23 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <Fragment slot="announcement"></Fragment>
-  <Fragment slot="header"></Fragment>
+  <Fragment slot="header">
+    <Header
+      position="left"
+      links={[
+        { text: 'Ananda', href: getPermalink('/homes/personal') },
+        { text: 'Ado', href: getPermalink('/homes/personal') },
+      ]}
+      actions={[
+        {
+          text: 'Me apunto',
+          href: '#',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
 
   <!-- Hero2 Widget ******************* -->
 
@@ -185,16 +203,16 @@ const metadata = {
       icon: 'tabler:chevron-right',
     }}
   >
-  <Fragment slot="bottom">
-    <YouTube id="e9O4tkCdnQ8" title="Testimonios del taller" />
-    <style is:inline>
-      lite-youtube {
-        margin: 0 auto;
-        max-width: 100%;
-        width: 80vw;
-      }
-    </style>
-  </Fragment>
+    <Fragment slot="bottom">
+      <YouTube id="e9O4tkCdnQ8" title="Testimonios del taller" />
+      <style is:inline>
+        lite-youtube {
+          margin: 0 auto;
+          max-width: 100%;
+          width: 80vw;
+        }
+      </style>
+    </Fragment>
   </Testimonials>
 
   <!-- Youtube Widget ******************* -->
@@ -225,7 +243,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
+      src: '~/assets/images/2.webp',
       alt: 'Startup Image',
     }}
   >
@@ -255,7 +273,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1531973486364-5fa64260d75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1658&q=80',
+      src: '~/assets/images/3.webp',
       alt: 'SaaS Businesses Image',
     }}
   >
@@ -286,7 +304,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/5.webp',
       alt: 'Portfolio Image',
     }}
   >
@@ -315,7 +333,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      src: '~/assets/images/7.webp',
       alt: 'Small Business Image',
     }}
   >
@@ -409,6 +427,49 @@ const metadata = {
       },
     ]}
   />
+
+  <Features3
+    title="Todavia con dudas"
+    subtitle="Nos encantara atenderte"
+    columns={3}
+    items={[
+     
+      {
+        title: 'Email',
+        icon: 'tabler:mail',
+        callToAction: {
+          target: '_blank',
+          text: 'info@espai-ananda.com',
+          href: 'mailto:info@espai-ananda.com',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Habla con Ado',
+        icon: 'tabler:message-circle',
+        callToAction: {
+          target: '_blank',
+          text: 'Envia whatsapp',
+          href: 'https://wa.me/34680760473',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Habla con Ananda',
+        icon: 'tabler:message-circle',
+        callToAction: {
+          target: '_blank',
+          text: 'Envia whatsapp',
+          href: 'https://wa.me/34627591609',
+          variant: 'link',
+        },
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features3>
 
   <Fragment slot="footer"></Fragment>
 </Layout>
