@@ -247,6 +247,38 @@ El Tantra crea un espacio donde lo humano y lo espiritual se encuentran y se cel
 
    <!-- Steps Widget ****************** -->
 
+   <Testimonials2
+title='Los facilitadores'
+testimonials={[
+  {
+    name: 'Ananda',
+    job: 'Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.',
+    image: {
+      src: '~/assets/images/ananda_cara.jpg',
+      alt: 'Ananda',
+    },
+  },
+  {
+    name: 'Ado Melera',
+    job: 'Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.',
+    image: {
+      src: '~/assets/images/ado_cara.jpg',
+      alt: 'Ado',
+    },
+  }  
+]}
+callToAction={{
+  target: '_blank',
+  text: 'Mas información...',
+  href: 'https://github.com/onwidget/astrowind',
+  icon: 'tabler:chevron-right',
+}}
+>
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Testimonials2>
+
    <Steps
    title="Recorrido Sexo con K-alma"
    items={[
@@ -286,39 +318,12 @@ El Tantra crea un espacio donde lo humano y lo espiritual se encuentran y se cel
      alt: 'Steps image',
    }}
    >
-   <Fragment slot="bg">
+   <!-- <Fragment slot="bg">
     <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
+  </Fragment> -->
 </Steps>
 
-<Testimonials2
-title='Los facilitadores'
-testimonials={[
-  {
-    name: 'Ananda',
-    job: 'Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.',
-    image: {
-      src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-      alt: 'Emily Kennedy Image',
-    },
-  },
-  {
-    name: 'Ado Melera',
-    job: 'Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.',
-    image: {
-      src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Sarah Hansen Image',
-    },
-  }  
-]}
-callToAction={{
-  target: '_blank',
-  text: 'More testimonials...',
-  href: 'https://github.com/onwidget/astrowind',
-  icon: 'tabler:chevron-right',
-}}
->
-</Testimonials2>
+
 
 <!-- <Features2
 title="Los Facilitadores"
@@ -333,18 +338,61 @@ image={{
 </Fragment>
 </Features2> -->
 
+  <!-- Content Widget **************** -->
+
+    
+
+  <Content
+    title='Del hacer al ser<br /><span class="text-xl">18 Mayo 2025</span>',
+    subtitle='En un mundo lleno de distracciones y desafíos, reconectar con nuestro ser interior y con nuestra pareja puede ser un viaje profundamente transformador. Este taller está diseñado para ayudarte a reconocer quién eres, deshacer tus miedos y resistencias con la ayuda del amor, y descubrir que no estás solo en este camino. Antes de fundirte con el otro, es esencial fundirte con tu propio ser, trascender las autolimitaciones y la sensación de que eres erróne@, y destilarte como ser humano para brillar ante ti y ante tu pareja. ¡Queremos que te vuelvas a enamorar de ti mismo y de tu pareja!',
+    isReversed
+    items={[ 
+      // {
+      //   title: 'Introducción:',
+      //   description: 'En un mundo lleno de distracciones y desafíos, reconectar con nuestro ser interior y con nuestra pareja puede ser un viaje profundamente transformador. Este taller está diseñado para ayudarte a reconocer quién eres, deshacer tus miedos y resistencias con la ayuda del amor, y descubrir que no estás solo en este camino. Antes de fundirte con el otro, es esencial fundirte con tu propio ser, trascender las autolimitaciones y la sensación de que eres erróne@, y destilarte como ser humano para brillar ante ti y ante tu pareja. ¡Queremos que te vuelvas a enamorar de ti mismo y de tu pareja!',
+      // },    
+      // {
+      //   title: 'Objetivos del Taller:',
+      //   description:
+      //     '<ul class="text-muted list-disc"><li>Conectar profundamente con tu corporalidad y reconocerla como el hogar de tu alma.</li><li>Desarrollar prácticas de cuidado corporal para mantener tu templo en armonía.</li><li>Conocer y  sentir cómo y en qué lugares se manifiesta ese magnetismo en tu cuerpo.</li><li>La importancia de mantener vivo y radiante tú magnetismo individual.</li><li>Darse cuenta de cuáles son los hábitos energéticos(inercias) que se despiertan en la intimidad.</li><li>Reconocer los límites, como una herramienta necesaria para vincularse y aprender a escuchar el cuerpo para comunicarlos.</li><li>Desplegar el amor a través de la experiencia corporal y sensorial.</li><li>Poder celebrar tanto la dualidad como el goce.</li><li>Disfrutar a través del juego y la espontaneidad en la conexión íntima.</li></ul>',
+      // },
+      {
+       title: 'Programa:',
+        description:
+          '<ul class="text-muted list-disc"><li>Conoce tu esencia más profunda</li><li>Deshacer los miedos y las resistencias a través del poder del amor.</li><li>La tecnología del amor.</li><li>Conexión y apoyo mutuo en el viaje de autodescubrimiento.</li><li>La danza entre la individuación y la fusión.</li><li>El descanso en la intimidad.</li><li>La corporalidad: el camino de la presencia.</li><li>Mantener viva la llama de la propia vitalidad.</li><li>La Comunicación NoViolenta, una herramienta esencial en la relación.</li><li>La respiración al servicio de la sensibilidad.</li><li>Despertar el cuerpo extático.</li><li>Hacer el amor: un acto desde la consciencia</li></ul>',
+      },
+      
+    ]},
+    image={{
+      src: '~/assets/images/238A6769.jpg',
+      alt: 'Del hacer al ser',
+      aspectRatio: "1:1"
+    }},
+    classes={{itemClasses: 'list-disc',Headline: 'text-m'}}
+  >
+    <!-- <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        El Magnetismo de los cuerpos: <br /><span class="text-xl">18 Mayo 2025</span>
+      </h3>
+    </Fragment> -->
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+    
+  </Content>
+
  <!-- Content Widget **************** -->
 
   <Content
-    title='Introducción:',
+    title='El Magnetismo de los cuerpos<br /><span class="text-xl">18 Mayo 2025</span>',
     subtitle='Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.<br>Cuando la pareja se une, las bioenergías de los cuerpos crean una experiencia sexual extática a través de la atracción de las polaridades opuestas, como dos imanes que crean un campo magnético (yin-yang, femenino –masculino).<br>Independientemente del género, en el encuentro tiene que haber una polaridad, siempre habrá un@ con carga masculina, más emisiva y otr@ con carga femenina, más receptiva.',
-    isReversed
+    
     items={[      
       {
         title: 'Objetivos del Taller:',
         description:
-          '<ul><li>Conectar profundamente con tu corporalidad y reconocerla como el hogar de tu alma.</li><li>Desarrollar prácticas de cuidado corporal para mantener tu templo en armonía.</li><li>Conocer y  sentir cómo y en qué lugares se manifiesta ese magnetismo en tu cuerpo.</li><li>La importancia de mantener vivo y radiante tú magnetismo individual.</li><li>Darse cuenta de cuáles son los hábitos energéticos(inercias) que se despiertan en la intimidad.</li><li>Reconocer los límites, como una herramienta necesaria para vincularse y aprender a escuchar el cuerpo para comunicarlos.</li><li>Desplegar el amor a través de la experiencia corporal y sensorial.</li><li>Poder celebrar tanto la dualidad como el goce.</li><li>Disfrutar a través del juego y la espontaneidad en la conexión íntima.</li></ul>',
-        classes:{content: 'list-disc'}
+          '<ul class="text-muted list-disc"><li>Conectar profundamente con tu corporalidad y reconocerla como el hogar de tu alma.</li><li>Desarrollar prácticas de cuidado corporal para mantener tu templo en armonía.</li><li>Conocer y  sentir cómo y en qué lugares se manifiesta ese magnetismo en tu cuerpo.</li><li>La importancia de mantener vivo y radiante tú magnetismo individual.</li><li>Darse cuenta de cuáles son los hábitos energéticos(inercias) que se despiertan en la intimidad.</li><li>Reconocer los límites, como una herramienta necesaria para vincularse y aprender a escuchar el cuerpo para comunicarlos.</li><li>Desplegar el amor a través de la experiencia corporal y sensorial.</li><li>Poder celebrar tanto la dualidad como el goce.</li><li>Disfrutar a través del juego y la espontaneidad en la conexión íntima.</li></ul>',
       },
       {
         title: 'Conclusión:',
@@ -360,27 +408,133 @@ image={{
     }},
     classes={{itemClasses: 'list-disc',Headline: 'text-m'}}
   >
-    <Fragment slot="content">
+    <!-- <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         El Magnetismo de los cuerpos: <br /><span class="text-xl">18 Mayo 2025</span>
       </h3>
-    </Fragment>
+    </Fragment> -->
 
-    <Fragment slot="bg">
+    <!-- <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-
-    <style is:inline>
-      ul {
-        list-style:circle; 
-        padding:unset; 
-      }
-    </style>
+    </Fragment> -->
   </Content>
+
+
+
+   <!-- Content Widget **************** -->
+
+   <Content
+   title='Contacto e intimidad<br /><span class="text-xl">18 Mayo 2025</span>',
+   subtitle='Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.<br>Cuando la pareja se une, las bioenergías de los cuerpos crean una experiencia sexual extática a través de la atracción de las polaridades opuestas, como dos imanes que crean un campo magnético (yin-yang, femenino –masculino).<br>Independientemente del género, en el encuentro tiene que haber una polaridad, siempre habrá un@ con carga masculina, más emisiva y otr@ con carga femenina, más receptiva.',
+   isReversed
+   items={[      
+     {
+       title: 'Objetivos del Taller:',
+       description:
+         '<ul class="text-muted list-disc"><li>Conectar profundamente con tu corporalidad y reconocerla como el hogar de tu alma.</li><li>Desarrollar prácticas de cuidado corporal para mantener tu templo en armonía.</li><li>Conocer y  sentir cómo y en qué lugares se manifiesta ese magnetismo en tu cuerpo.</li><li>La importancia de mantener vivo y radiante tú magnetismo individual.</li><li>Darse cuenta de cuáles son los hábitos energéticos(inercias) que se despiertan en la intimidad.</li><li>Reconocer los límites, como una herramienta necesaria para vincularse y aprender a escuchar el cuerpo para comunicarlos.</li><li>Desplegar el amor a través de la experiencia corporal y sensorial.</li><li>Poder celebrar tanto la dualidad como el goce.</li><li>Disfrutar a través del juego y la espontaneidad en la conexión íntima.</li></ul>',
+     },
+     {
+       title: 'Conclusión:',
+       description:
+         'El Magnetismo de los Cuerpos es un taller para reconocer y celebrar tu cuerpo como el hogar de tu alma. Al cuidarte y vivenciarte plenamente en esta experiencia corporal y sensorial, te conviertes en pura irradiación y magnetismo. A través de tu cuerpo, el amor se despliega y se abre, convirtiendo el juego inocente de la dualidad en una pura celebración y disfrute. Este taller es una invitación a vivir y disfrutar del amor y la conexión íntima desde la profundidad de tu ser y el reconocimiento de tu cuerpo como tu templo sagrado.',
+     },
+     
+   ]},
+   image={{
+     src: '~/assets/images/238A7018.jpg',
+     alt: 'Contacto e intimidad',
+     aspectRatio: "1:1"
+   }},
+   classes={{itemClasses: 'list-disc',Headline: 'text-m'}}
+ >
+   <!-- <Fragment slot="content">
+     <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+       El Magnetismo de los cuerpos: <br /><span class="text-xl">18 Mayo 2025</span>
+     </h3>
+   </Fragment> -->
+
+   <Fragment slot="bg">
+     <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+   </Fragment>
+ </Content>
+
+ <!-- Content Widget **************** -->
+
+ <Content
+ title='Masaje Tántrico de Cachemira<br /><span class="text-xl">18 Mayo 2025</span>',
+ subtitle='Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.<br>Cuando la pareja se une, las bioenergías de los cuerpos crean una experiencia sexual extática a través de la atracción de las polaridades opuestas, como dos imanes que crean un campo magnético (yin-yang, femenino –masculino).<br>Independientemente del género, en el encuentro tiene que haber una polaridad, siempre habrá un@ con carga masculina, más emisiva y otr@ con carga femenina, más receptiva.',
+ 
+ items={[      
+   {
+     title: 'Objetivos del Taller:',
+     description:
+       '<ul class="text-muted list-disc"><li>Conectar profundamente con tu corporalidad y reconocerla como el hogar de tu alma.</li><li>Desarrollar prácticas de cuidado corporal para mantener tu templo en armonía.</li><li>Conocer y  sentir cómo y en qué lugares se manifiesta ese magnetismo en tu cuerpo.</li><li>La importancia de mantener vivo y radiante tú magnetismo individual.</li><li>Darse cuenta de cuáles son los hábitos energéticos(inercias) que se despiertan en la intimidad.</li><li>Reconocer los límites, como una herramienta necesaria para vincularse y aprender a escuchar el cuerpo para comunicarlos.</li><li>Desplegar el amor a través de la experiencia corporal y sensorial.</li><li>Poder celebrar tanto la dualidad como el goce.</li><li>Disfrutar a través del juego y la espontaneidad en la conexión íntima.</li></ul>',
+   },
+   {
+     title: 'Conclusión:',
+     description:
+       'El Magnetismo de los Cuerpos es un taller para reconocer y celebrar tu cuerpo como el hogar de tu alma. Al cuidarte y vivenciarte plenamente en esta experiencia corporal y sensorial, te conviertes en pura irradiación y magnetismo. A través de tu cuerpo, el amor se despliega y se abre, convirtiendo el juego inocente de la dualidad en una pura celebración y disfrute. Este taller es una invitación a vivir y disfrutar del amor y la conexión íntima desde la profundidad de tu ser y el reconocimiento de tu cuerpo como tu templo sagrado.',
+   },
+   
+ ]},
+ image={{
+   src: '~/assets/images/238A7018.jpg',
+   alt: 'Masaje Tántrico de Cachemira',
+   aspectRatio: "1:1"
+ }},
+ classes={{itemClasses: 'list-disc',Headline: 'text-m'}}
+>
+ <!-- <Fragment slot="content">
+   <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+     El Magnetismo de los cuerpos: <br /><span class="text-xl">18 Mayo 2025</span>
+   </h3>
+ </Fragment> -->
+
+ <!-- <Fragment slot="bg">
+   <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+ </Fragment> -->
+</Content>
+
+<!-- Content Widget **************** -->
+
+<Content
+title='Residencial Haz el amor por amor<br /><span class="text-xl">Del 21 al 24 de Agosto 2025</span>',
+subtitle='Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.<br>Cuando la pareja se une, las bioenergías de los cuerpos crean una experiencia sexual extática a través de la atracción de las polaridades opuestas, como dos imanes que crean un campo magnético (yin-yang, femenino –masculino).<br>Independientemente del género, en el encuentro tiene que haber una polaridad, siempre habrá un@ con carga masculina, más emisiva y otr@ con carga femenina, más receptiva.',
+isReversed
+items={[      
+  {
+    title: 'Objetivos del Taller:',
+    description:
+      '<ul class="text-muted list-disc"><li>Conectar profundamente con tu corporalidad y reconocerla como el hogar de tu alma.</li><li>Desarrollar prácticas de cuidado corporal para mantener tu templo en armonía.</li><li>Conocer y  sentir cómo y en qué lugares se manifiesta ese magnetismo en tu cuerpo.</li><li>La importancia de mantener vivo y radiante tú magnetismo individual.</li><li>Darse cuenta de cuáles son los hábitos energéticos(inercias) que se despiertan en la intimidad.</li><li>Reconocer los límites, como una herramienta necesaria para vincularse y aprender a escuchar el cuerpo para comunicarlos.</li><li>Desplegar el amor a través de la experiencia corporal y sensorial.</li><li>Poder celebrar tanto la dualidad como el goce.</li><li>Disfrutar a través del juego y la espontaneidad en la conexión íntima.</li></ul>',
+  },
+  {
+    title: 'Conclusión:',
+    description:
+      'El Magnetismo de los Cuerpos es un taller para reconocer y celebrar tu cuerpo como el hogar de tu alma. Al cuidarte y vivenciarte plenamente en esta experiencia corporal y sensorial, te conviertes en pura irradiación y magnetismo. A través de tu cuerpo, el amor se despliega y se abre, convirtiendo el juego inocente de la dualidad en una pura celebración y disfrute. Este taller es una invitación a vivir y disfrutar del amor y la conexión íntima desde la profundidad de tu ser y el reconocimiento de tu cuerpo como tu templo sagrado.',
+  },
+  
+]},
+image={{
+  src: '~/assets/images/238A7018.jpg',
+  alt: 'Residencial Haz el amor por amor',
+  aspectRatio: "1:1"
+}},
+classes={{itemClasses: 'list-disc',Headline: 'text-m'}}
+>
+<!-- <Fragment slot="content">
+  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+    El Magnetismo de los cuerpos: <br /><span class="text-xl">18 Mayo 2025</span>
+  </h3>
+</Fragment> -->
+
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Content>
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isAfterContent={true}
     items={[
       {
@@ -405,10 +559,10 @@ image={{
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
-
+<!-- 
   <Content
     isReversed
     isAfterContent={true}
@@ -436,11 +590,11 @@ image={{
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     items={[
       {
         title: 'Description:',
@@ -465,7 +619,7 @@ image={{
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 <!-- Features Widget *************** -->
 
 <Features
@@ -518,16 +672,16 @@ items={[
     subtitle="¿Que opcion escoges?"
     prices={[
       {
-        title: '4 talleres',
+        title: 'cada taller',
         subtitle: 'de 1 dia cada uno',
-        price: 600,
+        price: 180,
         period: 'por pareja',
         items: [
           {
             description: 'De Abril a Julio',
           },
           {
-            description: '1 taller al mes',
+            description: 'El total es 640€',
           },
           {
             description: 'Grupo de seguimiento',
@@ -543,9 +697,53 @@ items={[
         },
       },
       {
+        title: '4 talleres',
+        subtitle: 'de 1 dia cada uno',
+        price: 600,
+        period: 'por pareja',
+        items: [
+          {
+            description: 'De Abril a Julio',
+          },
+          {
+            description: 'Nos apuntamos a todos los talleres',
+          },
+          {
+            description: 'Grupo de seguimiento',
+          },
+          {
+            description: 'Con meditaciones guiadas en video',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Nos apuntamos',
+          href: '#',
+        },
+      },      
+      {
+        title: 'Solo el residencial',
+        subtitle: 'de 3 dias',
+        price: 1000,
+        period: 'por pareja',
+        items: [
+          {
+            description: '460 precio formacion',
+          },
+          {
+            description: '540 precio alojamiento (180 por pareja por noche)',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Nos apuntamos',
+          href: '#',
+        },
+      },
+      {
         title: 'recorrido completo',
         subtitle: 'incluye residencial y talleres',
-        price: 1400,
+        price: 1500,
         period: 'por pareja',
         items: [
           {
@@ -568,25 +766,6 @@ items={[
         },
         hasRibbon: true,
         ribbonTitle: 'recomendado',
-      },
-      {
-        title: 'Solo el residencial',
-        subtitle: 'de 3 dias',
-        price: 1000,
-        period: 'por pareja',
-        items: [
-          {
-            description: '',
-          },
-          {
-            description: '',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Nos apuntamos',
-          href: '#',
-        },
       },
     ]}
   />
