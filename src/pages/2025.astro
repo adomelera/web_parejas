@@ -12,6 +12,7 @@ import Content from '~/components/widgets/Content.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import { YouTube } from 'astro-embed';
 import { getPermalink } from '~/utils/permalinks';
+import { imageConfig } from 'astro:assets';
 
 const metadata = {
   title: 'Sexo con K-Alma 2025',
@@ -335,28 +336,29 @@ image={{
  <!-- Content Widget **************** -->
 
   <Content
-    title="Recorrido Sexo con K-alma"
-    subtitle="Cada taller está diseñado para construir sobre el anterior, permitiendo a los participantes asimilar y practicar lo aprendido antes de avanzar al siguiente nivel. Esto crea una base sólida y duradera para la transformación personal y de pareja."
+    title='Introducción:',
+    subtitle='Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.<br>Cuando la pareja se une, las bioenergías de los cuerpos crean una experiencia sexual extática a través de la atracción de las polaridades opuestas, como dos imanes que crean un campo magnético (yin-yang, femenino –masculino).<br>Independientemente del género, en el encuentro tiene que haber una polaridad, siempre habrá un@ con carga masculina, más emisiva y otr@ con carga femenina, más receptiva.',
     isReversed
-    items={[
+    items={[      
       {
-        title: 'Introducción:',
+        title: 'Objetivos del Taller:',
         description:
-          'Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.',
+          '<ul><li>Conectar profundamente con tu corporalidad y reconocerla como el hogar de tu alma.</li><li>Desarrollar prácticas de cuidado corporal para mantener tu templo en armonía.</li><li>Conocer y  sentir cómo y en qué lugares se manifiesta ese magnetismo en tu cuerpo.</li><li>La importancia de mantener vivo y radiante tú magnetismo individual.</li><li>Darse cuenta de cuáles son los hábitos energéticos(inercias) que se despiertan en la intimidad.</li><li>Reconocer los límites, como una herramienta necesaria para vincularse y aprender a escuchar el cuerpo para comunicarlos.</li><li>Desplegar el amor a través de la experiencia corporal y sensorial.</li><li>Poder celebrar tanto la dualidad como el goce.</li><li>Disfrutar a través del juego y la espontaneidad en la conexión íntima.</li></ul>',
+        classes:{content: 'list-disc'}
       },
       {
-        title: 'Objetivos del Taller',
+        title: 'Conclusión:',
         description:
-          '<ul><li>Conectar profundamente con tu cuerpo y reconocerlo como el hogar de tu alma.</li><li>Desarrollar prácticas de cuidado corporal para mantener tu templo en armonía.</li><li>Experimentar la irradiación y magnetismo que surge de conocerte y aceptarte plenamente.</li><li>Desplegar el amor a través de la experiencia corporal y sensorial.</li><li>Celebrar la dualidad y el disfrute a través del juego y la conexión íntima.</li></ul>',
-        classes:{content: 'list-disc'}
+          'El Magnetismo de los Cuerpos es un taller para reconocer y celebrar tu cuerpo como el hogar de tu alma. Al cuidarte y vivenciarte plenamente en esta experiencia corporal y sensorial, te conviertes en pura irradiación y magnetismo. A través de tu cuerpo, el amor se despliega y se abre, convirtiendo el juego inocente de la dualidad en una pura celebración y disfrute. Este taller es una invitación a vivir y disfrutar del amor y la conexión íntima desde la profundidad de tu ser y el reconocimiento de tu cuerpo como tu templo sagrado.',
       },
       
     ]},
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: '~/assets/images/238A7991.jpg',
       alt: 'El Magnetismo de los cuerpos',
+      aspectRatio: "1:1"
     }},
-    classes={{itemClasses: 'list-disc'}}
+    classes={{itemClasses: 'list-disc',Headline: 'text-m'}}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
