@@ -1,0 +1,70 @@
+---
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
+import type { Testimonials as Props } from '~/types';
+
+const {
+  title = '',
+  subtitle = '',
+  tagline = '',
+  testimonials = [],
+  callToAction,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+  bottom = await Astro.slots.render('bottom'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} />
+  <!-- flex justify-center mx-auto w-fit mt-8 md:mt-12 font-medium -->
+  <div class="grid gap-6">
+    {
+      testimonials &&
+        testimonials.map(({ title, testimonial, name, job, image }) => (
+              <div class="flex items-center">
+                {image && (
+                  <div class="h-60 w-60 rounded-full border border-slate-200 dark:border-slate-600">
+                    {typeof image === 'string' ? (
+                      <Fragment set:html={image} />
+                    ) : (
+                      <Image
+                        class="h-60 w-60 rounded-full border border-slate-200 dark:border-slate-600 min-w-full min-h-full"
+                        width={180}
+                        height={180}
+                        widths={[400, 768]}
+                        layout="fixed"
+                        {...image}
+                      />
+                    )}
+                  </div>
+                )}
+
+                <div class="w-60 grow ml-3 rtl:ml-0 rtl:mr-3">
+                  {name && <p class="text-xl font-semibold">{name}</p>}
+                  {job && <p class="text-base text-muted">{job}</p>}  
+                  <div class="flex justify-center mt-2">
+                  <Button {...callToAction} />
+                </div>                
+                </div>
+                
+              </div>                      
+        ))
+    }
+  </div>
+  {
+    // callToAction && (
+    //   <div class="flex justify-center mx-auto w-fit mt-8 md:mt-12 font-medium">
+    //     <slot name="bottom">
+    //       {bottom ? <Fragment set:html={bottom} /> : <Button {...callToAction} />}
+    //     </slot>
+        
+    //   </div>
+    // )
+  }
+</WidgetWrapper>

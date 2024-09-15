@@ -3,9 +3,13 @@ import Layout from '~/layouts/PageLayout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Prices from '~/components/widgets/Pricing.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
+import Testimonials2 from '~/components/widgets/Testimonials2.astro';
 import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
 import { YouTube } from 'astro-embed';
 import { getPermalink } from '~/utils/permalinks';
 
@@ -25,7 +29,7 @@ const metadata = {
       ]}
       actions={[
         {
-          text: 'Me apunto',
+          text: 'Nos apuntamos',
           href: '#',
         },
       ]}
@@ -54,27 +58,26 @@ const metadata = {
   </Hero>
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Un Viaje de Conexión Íntima y Espiritual"
+    subtitle="El Tantra ofrece un camino para revitalizar y profundizar la relación íntima y sexual, trascendiendo lo físico hacia lo espiritual."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Reconexión en pareja',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
+          'La práctica del Tantra ayuda a recuperar la conexión profunda entre parejas en medio del ajetreo diario.',
         icon: 'tabler:template',
       },
       {
-        title: 'Interior Design',
-        description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
+        title: 'Conciencia y presencia',
+        description: 'El Tantra se centra en cultivar la conciencia plena y la presencia en la relación íntima.',
         icon: 'tabler:template',
       },
       {
-        title: 'Photography',
+        title: 'Revitalización del vínculo',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
+          'Los talleres tántricos están diseñados para reavidar la chispa y fortalecer los lazos emocionales en la pareja.',
         icon: 'tabler:template',
       },
     ]}
@@ -85,45 +88,61 @@ const metadata = {
   </Features3>
 
   <!-- Features3 Widget ************** -->
+  <!-- 
+Creatividad sensorial
+Se explora el sexo como una forma de expresión creativa y sensorial, conectando con la inspiración interna.
 
+Viaje de autodescubrimiento
+El proceso tántrico invita a aventurarse en lo desconocido y sentido, trascendiendo los límites personales.
+
+Transformación relacional
+El proceso busca transformar la relación de pareja en una experiencia más rica y espiritual.
+
+Práctica energética
+El Tantra trabaja con la energía vital para potenciar la conexión íntima y significativa en la pareja.
+
+Exploración gradual
+Los talleres permiten una inmersión progresiva y profunda en los beneficios del Tantra para parejas.
+
+Integración holística
+El Tantra crea un espacio donde lo humano y lo espiritual se encuentran y se celebran en la relación.  
+-->
   <Features3
     columns={3}
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
+        title: 'Comunicación corporal',
         description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
+          'Se exploran técnicas para mejorar la comunicación no verbal y la expresión corporal entre los amantes.',
         icon: 'tabler:template',
       },
       {
-        title: 'Blog',
-        description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
+        title: 'Expresión emocional',
+        description: 'El proceso tántrico fomenta la expresión abierta y honesta de los sentimientos en la relación.',
         icon: 'tabler:template',
       },
       {
-        title: 'Business',
+        title: 'Sexualidad trascendente',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
+          '"Sexo con K-alma" invita a vivir la sexualidad como una experiencia que va más allá de lo físico.',
         icon: 'tabler:template',
       },
       {
-        title: 'Branding',
+        title: 'Conexión espiritual',
         description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
+          'El Tantra busca integrar la espiritualidad en la intimidad sexual, elevando la experiencia a un plano superior.',
         icon: 'tabler:template',
       },
       {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
+        title: 'Programa progresivo',
+        description: 'El recorrido consta de cuatro talleres de un día y un retiro residencial de tres días.',
         icon: 'tabler:template',
       },
       {
-        title: 'Fashion Design',
+        title: 'Crecimiento mutuo',
         description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
+          'El recorrido tántrico facilita tanto el crecimiento individual como el desarrollo conjunto de la pareja.',
         icon: 'tabler:template',
       },
     ]}
@@ -139,7 +158,7 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from real customers"
+    title='Testimonios reales de "Sexo con K-alma"'
     testimonials={[
       {
         testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
@@ -225,37 +244,136 @@ const metadata = {
     }
   </style> -->
 
-  <!-- Content Widget **************** -->
+   <!-- Steps Widget ****************** -->
+
+   <Steps
+   title="Recorrido Sexo con K-alma"
+   items={[
+    {
+       title: 'Del hacer al ser',
+       description:
+         "Kickstart with GitHub! Either fork the ",
+       icon: 'tabler:package',
+     },
+     {
+       title: 'El Magnetismo de los cuerpos',
+       description:
+         "Kickstart with GitHub! Either fork the ",
+       icon: 'tabler:package',
+     },
+     {
+       title: 'Contacto e intimidad',
+       description:
+         "Kickstart with GitHub! Either fork the ",
+       icon: 'tabler:package',
+     },
+     {
+       title: 'Masaje Tántrico de Cachemira',
+       description:
+         "Kickstart with GitHub! Either fork the ",
+       icon: 'tabler:package',
+     },
+     {
+       title: 'Residencial Haz el amor por amor',
+       description:
+         "Kickstart with GitHub! Either fork the ",
+       icon: 'tabler:check',
+     },
+   ]}
+   image={{
+     src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+     alt: 'Steps image',
+   }}
+   >
+   <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Steps>
+
+<Testimonials2
+title='Los facilitadores'
+testimonials={[
+  {
+    name: 'Ananda',
+    job: 'Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.',
+    image: {
+      src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+      alt: 'Emily Kennedy Image',
+    },
+  },
+  {
+    name: 'Ado Melera',
+    job: 'Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.',
+    image: {
+      src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Sarah Hansen Image',
+    },
+  }  
+]}
+callToAction={{
+  target: '_blank',
+  text: 'More testimonials...',
+  href: 'https://github.com/onwidget/astrowind',
+  icon: 'tabler:chevron-right',
+}}
+>
+</Testimonials2>
+
+<!-- <Features2
+title="Los Facilitadores"
+subtitle="Link al perfilç!!!We believe in the magic of turning dreams into stunning realities. Founded by passionate developers with a shared vision, we set out to simplify the website creation process. Our templates bring together the innovation of Astro 4.0 and the versatility of Tailwind CSS, enabling you to express your unique brand identity like never before."
+image={{
+  src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+  alt: 'Steps image',
+}}
+>
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Features2> -->
+
+ <!-- Content Widget **************** -->
 
   <Content
-    title="Use cases"
-    subtitle="Discover how AstroWind's versatile template serves as the ideal solution for various use cases, providing tailored solutions to drive success."
+    title="Recorrido Sexo con K-alma"
+    subtitle="Cada taller está diseñado para construir sobre el anterior, permitiendo a los participantes asimilar y practicar lo aprendido antes de avanzar al siguiente nivel. Esto crea una base sólida y duradera para la transformación personal y de pareja."
     isReversed
     items={[
       {
-        title: 'Description:',
+        title: 'Introducción:',
         description:
-          'Are you a startup with big dreams? AstroWind propels your success. Our template forges a seamless online presence, attracting investors and customers from day one. Astro 4.0 and Tailwind CSS ensure striking, responsive sites, leaving lasting impressions. Countless startups leverage AstroWind to kickstart their journey and resonate with audiences.',
+          'Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu templo: el cuerpo, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta experiencia corporal y sensorial, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura irradiación, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura celebración y disfrute.',
       },
       {
-        title: 'Benefits:',
-        description: `Allow startups to quickly create professional websites without investing extensive time and resources. <br /> Make a memorable first impression with visually appealing design elements that highlight your startup's unique value proposition. <br /> Ensures your website looks stunning and works well on all devices. <br /> Engage potential investors and customers with engaging content, clear messaging, and intuitive navigation.`,
+        title: 'Objetivos del Taller',
+        description:
+          '<ul><li>Conectar profundamente con tu cuerpo y reconocerlo como el hogar de tu alma.</li><li>Desarrollar prácticas de cuidado corporal para mantener tu templo en armonía.</li><li>Experimentar la irradiación y magnetismo que surge de conocerte y aceptarte plenamente.</li><li>Desplegar el amor a través de la experiencia corporal y sensorial.</li><li>Celebrar la dualidad y el disfrute a través del juego y la conexión íntima.</li></ul>',
+        classes:{content: 'list-disc'}
       },
-    ]}
+      
+    ]},
     image={{
-      src: '~/assets/images/2.webp',
-      alt: 'Startup Image',
-    }}
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'El Magnetismo de los cuerpos',
+    }},
+    classes={{itemClasses: 'list-disc'}}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Startup success stories: <br /><span class="text-2xl">Launching with AstroWind</span>
+        El Magnetismo de los cuerpos: <br /><span class="text-xl">18 Mayo 2025</span>
       </h3>
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
+
+    <style is:inline>
+      ul {
+        list-style:circle; 
+        padding:unset; 
+      }
+    </style>
   </Content>
 
   <!-- Content Widget **************** -->
@@ -264,12 +382,14 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'Description:',
-        description: `For SaaS businesses, user experience is key. AstroWind enhances showcasing SaaS solutions intuitively. The template's Astro 4.0 and Tailwind CSS integration guarantees user-friendly experience, mirroring your software's efficiency. Customize pages to communicate SaaS value and solutions for your audience.`,
+        title: 'Programa:',
+        description:
+          'Danza intuitiva para liberar tensiones y conectar con la pareja. Ejercicios de tacto consciente para comunicar amor y cuidado. Juegos de rol físico para explorar diferentes dinámicas de poder y vulnerabilidad.',
       },
       {
-        title: 'Benefits:',
-        description: `Ensuring a cohesive and user-centric design for your SaaS website. <br /> Effectively communicate complex SaaS features through visual aids, animations, and interactive elements. <br /> Prioritize user needs and pain points through well-structured layouts and clear navigation. <br /> Encourage visitors to take action with strategically placed CTAs. <br /> Ensures your SaaS website works seamlessly across all devices.`,
+        title: 'Conclusión:',
+        description:
+          'El Magnetismo de los Cuerpos es un taller para reconocer y celebrar tu cuerpo como el hogar de tu alma. Al cuidarte y vivenciarte plenamente en esta experiencia corporal y sensorial, te conviertes en pura irradiación y magnetismo. A través de tu cuerpo, el amor se despliega y se abre, convirtiendo el juego inocente de la dualidad en una pura celebración y disfrute. Este taller es una invitación a vivir y disfrutar del amor y la conexión íntima desde la profundidad de tu ser y el reconocimiento de tu cuerpo como tu templo sagrado.',
       },
     ]}
     image={{
@@ -277,10 +397,7 @@ const metadata = {
       alt: 'SaaS Businesses Image',
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        SaaS showcase: <br /><span class="text-2xl">Streamlining user experience</span>
-      </h3>
+    <Fragment slot="content">      
     </Fragment>
 
     <Fragment slot="bg">
@@ -347,7 +464,51 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+<!-- Features Widget *************** -->
 
+<Features
+id="features"
+title="Que os puede aportar este recorrido"
+subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+items={[
+  {
+    title: 'Astro + Tailwind CSS Integration',
+    description:
+      'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+    icon: 'tabler:brand-tailwind',
+  },
+  {
+    title: 'Ready-to-use Components',
+    description:
+      'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+    icon: 'tabler:components',
+  },
+  {
+    title: 'Best Practices',
+    description:
+      'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+    icon: 'tabler:list-check',
+  },
+  {
+    title: 'Excellent Page Speed',
+    description:
+      'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+    icon: 'tabler:rocket',
+  },
+  {
+    title: 'Search Engine Optimization (SEO)',
+    description:
+      "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
+    icon: 'tabler:arrows-right-left',
+  },
+  {
+    title: 'Open to new ideas and contributions',
+    description:
+      'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+    icon: 'tabler:bulb',
+  },
+]}
+/>
   <!-- Pricing Widget ******************* -->
 
   <Prices
@@ -375,7 +536,7 @@ const metadata = {
         ],
         callToAction: {
           target: '_blank',
-          text: 'Me apunto',
+          text: 'Nos apuntamos',
           href: '#',
         },
       },
@@ -400,7 +561,7 @@ const metadata = {
         ],
         callToAction: {
           target: '_blank',
-          text: 'Me apunto',
+          text: 'Nos apuntamos',
           href: '#',
         },
         hasRibbon: true,
@@ -421,7 +582,7 @@ const metadata = {
         ],
         callToAction: {
           target: '_blank',
-          text: 'Me apunto',
+          text: 'Nos apuntamos',
           href: '#',
         },
       },
@@ -433,7 +594,6 @@ const metadata = {
     subtitle="Nos encantara atenderte"
     columns={3}
     items={[
-     
       {
         title: 'Email',
         icon: 'tabler:mail',
