@@ -23,13 +23,13 @@ const {
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
   <!-- flex justify-center mx-auto w-fit mt-8 md:mt-12 font-medium -->
-  <div class="grid gap-6">
+  <div class="grid grid-cols-1 col-auto gap-6">
     {
       testimonials &&
         testimonials.map(({ title, testimonial, name, job, image }) => (
-              <div class="flex items-center">
+              <div class="md:flex items-center">
                 {image && (
-                  <div class="h-60 w-60 rounded-full border border-slate-200 dark:border-slate-600">
+                  <div class="mx-auto h-60 w-60 rounded-full border border-slate-200 dark:border-slate-600">
                     {typeof image === 'string' ? (
                       <Fragment set:html={image} />
                     ) : (
@@ -45,7 +45,7 @@ const {
                   </div>
                 )}
 
-                <div class="w-60 grow ml-3 rtl:ml-0 rtl:mr-3">
+                <div class="mx-auto w-60 grow md:ml-3 rtl:ml-0 rtl:mr-3">
                   {name && <p class="text-xl font-semibold">{name}</p>}
                   {job && <p class="text-base text-muted">{job}</p>}  
                   <div class="flex justify-center mt-2">
