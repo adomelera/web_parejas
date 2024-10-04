@@ -4,7 +4,6 @@ import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Prices from '~/components/widgets/Pricing.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Testimonials2 from '~/components/widgets/Testimonials2.astro';
@@ -12,9 +11,8 @@ import Content from '~/components/widgets/Content.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import { YouTube } from 'astro-embed';
 import { getPermalink } from '~/utils/permalinks';
-import { imageConfig } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
-import Image from '~/components/common/Image.astro';
+
 
 const metadata = {
   title: 'Sexo con K-Alma 2025',
@@ -33,7 +31,7 @@ const metadata = {
       actions={[
         {
           text: 'Nos apuntamos',
-          href: '#',
+          href: 'https://wa.me/34627591609/?text=Hola,%20Nos%20queremos%20apuntar%20a%20Sexo%20con%20K-Alma',
         },
       ]}
       isSticky
@@ -273,8 +271,8 @@ El Tantra crea un espacio donde lo humano y lo espiritual se encuentran y se cel
         icon: 'tabler:hand-stop',
       },
       {
-        title: 'Masaje Tántrico de Cachemira',
-        description: 'Respira, escucha junto al otro, acuna el corazon para abrirlo',
+        title: 'Juego, eros y celebración',
+        description: 'Entregemonos a la alegría, el placer y el gozo',
         icon: 'tabler:heart',
       },
       {
@@ -309,7 +307,7 @@ image={{
   <!-- Content Widget **************** -->
 
   <Content
-    title='Del hacer al ser<br /><span class="text-xl">18 Mayo 2025</span>'
+    title='Del hacer al ser<br /><span class="text-xl">6 Abril 2025</span>'
     ,
     subtitle="En un mundo lleno de distracciones y desafíos, reconectar con nuestro ser interior y con nuestra pareja puede ser un viaje profundamente transformador. Este taller está diseñado para ayudarte a reconocer quién eres, deshacer tus miedos y resistencias con la ayuda del amor, y descubrir que no estás solo en este camino. Antes de fundirte con el otro, es esencial fundirte con tu propio ser, trascender las autolimitaciones y la sensación de que eres erróne@, y destilarte como ser humano para brillar ante ti y ante tu pareja. ¡Queremos que te vuelvas a enamorar de ti mismo y de tu pareja!"
     ,
@@ -396,7 +394,7 @@ image={{
   <!-- Content Widget **************** -->
 
   <Content
-    title='Contacto e intimidad<br /><span class="text-xl">18 Mayo 2025</span>'
+    title='Contacto e intimidad<br /><span class="text-xl">15 Junio 2025</span>'
     ,
     subtitle="El tacto en la intimidad es una puerta hacia una conexión profunda y significativa tanto con uno mismo como con la pareja. Este taller está diseñado para explorar y experimentar el contacto en sus diversas formas: con uno mismo, con la pareja, con nuestras necesidades y con la ternura que nutre la relación. A través del contacto, cultivamos un espacio de presencia, comunicación y entrega pura, permitiendo que la intimidad florezca."
     ,
@@ -436,7 +434,7 @@ image={{
   <!-- Content Widget **************** -->
 
   <Content
-    title='Juego, eros y celebración <br /><span class="text-xl">18 Mayo 2025</span>'
+    title='Juego, eros y celebración <br /><span class="text-xl">13 Julio 2025</span>'
     ,
     subtitle='En este taller os invitamos a permitir vivir un renacimiento, reconocimiento, exploración y reconexión entregándoos a la alegría, el placer y el gozo a través de la presencia de vuestros cuerpos.<br>En este taller vais aprender a reconectar con vuestra creatividad, entusiasmo, el deseo el juego y la fantasía a través de juegos sencillos y de conexión. La invitación es que a través de distintas exploraciones podáis descubrir nuevas vías para despertar a Eros en vuestros cuerpos.<br>El taller va a suceder en un templo donde vamos a dejarnos inspirar por las diferentes musas (la música, el amor, el arte, la poesía, etc… En este espacio van a haber diferentes y variadas propuestas y juegos. Cuánta falta nos hace jugar y celebrar! Si los niños aprenden jugando, nosotr@s también podemos hacerlo.<br><br>"Os aseguro que, si no volvéis a ser como niños, no entraréis en el reino de los cielos"San Mateo (18, 1-5.10)<br><br>Un espacio donde nutriremos la conexión con el cuerpo, escucharemos y honraremos nuestra verdad personal, acogiendo nuestros límites y comunicándolos, pudiendo descubrir más formas de conectar con eros que no solo las típicas que imperan en nuestra vida cotidiana.''
     ,
@@ -899,7 +897,7 @@ image={{
         callToAction: {
           target: '_blank',
           text: 'Nos apuntamos',
-          href: '#',
+          href: 'https://wa.me/34627591609/?text=Hola,%20Nos%20queremos%20apuntar%20a%20un%20taller%20de%20Sexo%20con%20K-Alma',
         },
       },
       {
@@ -914,14 +912,11 @@ image={{
           {
             description: 'Grupo de seguimiento',
           },
-          {
-            description: 'Con meditaciones guiadas en video',
-          },
         ],
         callToAction: {
           target: '_blank',
           text: 'Nos apuntamos',
-          href: '#',
+          href: 'https://wa.me/34627591609/?text=Hola,%20Nos%20queremos%20apuntar%20a%20todos%20los%20talleres%20de%20Sexo%20con%20K-Alma',
         },
         hasRibbon: true,
         ribbonTitle: '- 40 €',
@@ -946,7 +941,7 @@ image={{
         callToAction: {
           target: '_blank',
           text: 'Nos apuntamos',
-          href: '#',
+          href: 'https://wa.me/34627591609/?text=Hola,%20Nos%20queremos%20apuntar%20al%20residencial%20de%20Sexo%20con%20K-Alma',
         },
       },
       {
@@ -957,21 +952,12 @@ image={{
         items: [
           {
             description: 'De Abril a Agosto',
-          },
-          {
-            description: '',
-          },
-          {
-            description: '',
-          },
-          {
-            description: '',
-          },
+          },          
         ],
         callToAction: {
           target: '_blank',
           text: 'Nos apuntamos',
-          href: '#',
+          href: 'https://wa.me/34627591609/?text=Hola,%20Nos%20queremos%20apuntar%20al%20recorrido%20completo%20de%20Sexo%20con%20K-Alma',
         },
         hasRibbon: true,
         ribbonTitle: '- 140 €',
