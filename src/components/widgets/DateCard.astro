@@ -1,0 +1,51 @@
+---
+interface Props {
+  startDay,
+  startMonth,
+  startDate,
+  endDay?,
+  endMonth?,
+  endDate?,
+  note  
+}
+
+const { startDay, startMonth, startDate, endDay, endMonth, endDate, note } = Astro.props;
+---
+
+<!-- Card -->
+<div class="max-w-[85rem] min-w-[10rem] px-2 py-2 mx-auto">
+  <div class="overflow-hidden group flex flex-col h-full bg-white border-2 border-black rounded-xl">
+    <div
+      class="bg-blue-500 text-white flex justify-between items-center py-2 px-4 rounded-t-lg border-b-2 border-black"
+    >
+      <div class="w-4 h-4 bg-black rounded-full"></div>
+      <span class="text-lg font-semibold">{startDay}</span>
+      <div class="w-4 h-4 bg-black rounded-full"></div>
+      {endDay && 
+      <span class="text-lg font-semibold">{endDay}</span>
+      <div class="w-4 h-4 bg-black rounded-full"></div>}
+    </div>
+    <div class="p-0">
+      <div class="p-4 flex flex-col justify-between items-center">
+        <div class="flex justify-center items-baseline w-full">
+          <div class="flex justify-center items-center mt-0">
+            <div class="text-gray-500 text-xl font-semibold rotate-[270deg]">{startMonth}</div>
+            <div class="text-6xl font-bold ml-0">{startDate}</div>            
+            {endDate && 
+            <div class="mx-2 font-bold text-5xl">-</div>            
+            <div class="text-gray-500 text-xl font-semibold rotate-[270deg]">{endMonth? endMonth : startMonth}</div>
+            <div class="text-6xl font-bold ml-0">{endDate}</div>}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200">
+      <a
+        class="w-full py-3 px-4 inline-flex justify-center items-center text-center gap-x-2 text-lg font-medium text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+        href="#"
+        set:html={note}>        
+      </a>
+    </div>
+  </div>
+  <!-- End Card -->
+</div>

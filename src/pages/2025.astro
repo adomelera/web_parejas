@@ -4,14 +4,16 @@ import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Prices from '~/components/widgets/Pricing.astro';
 import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Testimonials2 from '~/components/widgets/Testimonials2.astro';
 import Content from '~/components/widgets/Content.astro';
 import Steps from '~/components/widgets/Steps.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import DateCard from '~/components/widgets/DateCard.astro';
 import { YouTube } from 'astro-embed';
 import { Icon } from 'astro-icon/components';
-
 
 const metadata = {
   title: 'Sexo con K-Alma 2025',
@@ -40,8 +42,6 @@ const metadata = {
 
   <!-- Hero2 Widget ******************* -->
 
-  <!-- actions={[{ variant: 'primary', text: 'Más información', href: "https://www.espai-ananda.com/cursos-tantra-pareja-barcelona/tantra-en-pareja-en-barcelona/" }]} -->
-
   <Hero
     id="home"
     title="Sexo con K-Alma"
@@ -54,6 +54,8 @@ const metadata = {
       <br /><br />
       Las corazas que llevamos desde hace tiempo van cayendo para mostrar nuestra verdadera esencia a la persona con la que
       compartimos este momento de vida. La relación es un campo fértil, donde conseguir mucha expansión.
+      <br /><br />
+      Una de las necesidades más profundas de los seres humanos es pertenecer, estar en contacto, albergamos el deseo de dar y recibir, necesitamos el roce, el cariño, el calor y la presencia. En esta propuesta son bienvenidas todas las relaciones que aman, sean del tipo que sean, encarnadas en cualquier cuerpo y género.
     </Fragment>
   </Hero>
 
@@ -88,25 +90,6 @@ const metadata = {
   </Features3>
 
   <!-- Features3 Widget ************** -->
-  <!-- 
-Creatividad sensorial
-Se explora el sexo como una forma de expresión creativa y sensorial, conectando con la inspiración interna.
-
-Viaje de autodescubrimiento
-El proceso tántrico invita a aventurarse en lo desconocido y sentido, trascendiendo los límites personales.
-
-Transformación relacional
-El proceso busca transformar la relación de pareja en una experiencia más rica y espiritual.
-
-Práctica energética
-El Tantra trabaja con la energía vital para potenciar la conexión íntima y significativa en la pareja.
-
-Exploración gradual
-Los talleres permiten una inmersión progresiva y profunda en los beneficios del Tantra para parejas.
-
-Integración holística
-El Tantra crea un espacio donde lo humano y lo espiritual se encuentran y se celebran en la relación.  
--->
   <Features3
     columns={3}
     isAfterContent={true}
@@ -189,7 +172,7 @@ El Tantra crea un espacio donde lo humano y lo espiritual se encuentran y se cel
       },
     ]}
     callToAction={{
-      target: '_blank',      
+      target: '_blank',
     }}
   >
     <Fragment slot="bottom">
@@ -204,16 +187,6 @@ El Tantra crea un espacio donde lo humano y lo espiritual se encuentran y se cel
     </Fragment>
   </Testimonials>
 
-  <!-- Youtube Widget ******************* -->
-
-  <!-- <YouTube id="e9O4tkCdnQ8" title="Testimonios del taller" />
-  <style is:inline>
-    lite-youtube {
-      margin: 0 auto;
-      max-width: 80%;
-    }
-  </style> -->
-
   <!-- Steps Widget ****************** -->
 
   <Testimonials2
@@ -226,7 +199,7 @@ El Tantra crea un espacio donde lo humano y lo espiritual se encuentran y se cel
           src: '~/assets/images/ananda_cara.webp',
           alt: 'Deva Ananda',
         },
-        testimonial: 'https://www.espai-ananda.com/'
+        testimonial: 'https://www.espai-ananda.com/',
       },
       {
         name: 'Ado Melera',
@@ -235,7 +208,7 @@ El Tantra crea un espacio donde lo humano y lo espiritual se encuentran y se cel
           src: '~/assets/images/ado_cara.webp',
           alt: 'Ado Melera',
         },
-        testimonial: 'https://adomelera.com/'
+        testimonial: 'https://adomelera.com/',
       },
     ]}
     callToAction={{
@@ -252,6 +225,7 @@ El Tantra crea un espacio donde lo humano y lo espiritual se encuentran y se cel
 
   <Steps
     title="Recorrido Sexo con K-Alma"
+    subtitle="Talleres y residencial en la provincia de Barcelona"
     items={[
       {
         title: 'Del Hacer al Ser',
@@ -283,24 +257,7 @@ El Tantra crea un espacio donde lo humano y lo espiritual se encuentran y se cel
       src: '~/assets/images/238A7514.webp',
       alt: 'Steps image',
     }}
-  >
-    <!-- <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment> -->
-  </Steps>
-
-  <!-- <Features2
-title="Los Facilitadores"
-subtitle="Link al perfilç!!!We believe in the magic of turning dreams into stunning realities. Founded by passionate developers with a shared vision, we set out to simplify the website creation process. Our templates bring together the innovation of Astro 4.0 and the versatility of Tailwind CSS, enabling you to express your unique brand identity like never before."
-image={{
-  src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-  alt: 'Steps image',
-}}
->
-<Fragment slot="bg">
-  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-</Fragment>
-</Features2> -->
+  />
 
   <!-- Content Widget **************** -->
 
@@ -311,15 +268,6 @@ image={{
     ,
     isReversed
     items={[
-      // {
-      //   title: 'Introducción:',
-      //   description: 'En un mundo lleno de distracciones y desafíos, reconectar con nuestro ser interior y con nuestra pareja puede ser un viaje profundamente transformador. Este taller está diseñado para ayudarte a reconocer quién eres, deshacer tus miedos y resistencias con la ayuda del amor, y descubrir que no estás solo en este camino. Antes de fundirte con el otro, es esencial fundirte con tu propio ser, trascender las autolimitaciones y la sensación de que eres erróne@, y destilarte como ser humano para brillar ante ti y ante tu pareja. ¡Queremos que te vuelvas a enamorar de ti mismo y de tu pareja!',
-      // },
-      // {
-      //   title: 'Objetivos del Taller:',
-      //   description:
-      //     '<ul class="text-muted list-disc"><li>Conectar profundamente con tu corporalidad y reconocerla como el hogar de tu alma.</li><li>Desarrollar prácticas de cuidado corporal para mantener tu templo en armonía.</li><li>Conocer y  sentir cómo y en qué lugares se manifiesta ese magnetismo en tu cuerpo.</li><li>La importancia de mantener vivo y radiante tú magnetismo individual.</li><li>Darse cuenta de cuáles son los hábitos energéticos(inercias) que se despiertan en la intimidad.</li><li>Reconocer los límites, como una herramienta necesaria para vincularse y aprender a escuchar el cuerpo para comunicarlos.</li><li>Desplegar el amor a través de la experiencia corporal y sensorial.</li><li>Poder celebrar tanto la dualidad como el goce.</li><li>Disfrutar a través del juego y la espontaneidad en la conexión íntima.</li></ul>',
-      // },
       {
         title: 'Programa:',
         description:
@@ -327,7 +275,8 @@ image={{
       },
       {
         title: 'Conclusión:',
-        description: 'Este taller nos invita a redescubrir la importancia del descanso y el valor del *no esfuerzo* en la intimidad*<br>Los momentos de descanso, gozo y  placer son una forma de recarga necesaria para sostener nuestro propio bienestar y el de la relación.<br>Cuanto más habitemos nuestro cuerpo más conocerás y sabrás escuchar tus propias necesidades y respetar y comprender las de tu compañer@. Estar conectados a las sensaciones corporales nos trae el abrazo del presente, lo cual nos permite estar más en sintonía con nuestro ser interior.',
+        description:
+          'Este taller nos invita a redescubrir la importancia del descanso y el valor del *no esfuerzo* en la intimidad*<br>Los momentos de descanso, gozo y  placer son una forma de recarga necesaria para sostener nuestro propio bienestar y el de la relación.<br>Cuanto más habitemos nuestro cuerpo más conocerás y sabrás escuchar tus propias necesidades y respetar y comprender las de tu compañer@. Estar conectados a las sensaciones corporales nos trae el abrazo del presente, lo cual nos permite estar más en sintonía con nuestro ser interior.',
       },
     ]}
     ,
@@ -339,12 +288,6 @@ image={{
     ,
     classes={{ itemClasses: 'list-disc', Headline: 'text-m' }}
   >
-    <!-- <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        El Magnetismo de los Cuerpos: <br /><span class="text-xl">18 mayo 2025</span>
-      </h3>
-    </Fragment> -->
-
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
@@ -377,17 +320,7 @@ image={{
     }}
     ,
     classes={{ itemClasses: 'list-disc', Headline: 'text-m' }}
-  >
-    <!-- <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        El Magnetismo de los Cuerpos: <br /><span class="text-xl">18 mayo 2025</span>
-      </h3>
-    </Fragment> -->
-
-    <!-- <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment> -->
-  </Content>
+  />
 
   <!-- Content Widget **************** -->
 
@@ -418,12 +351,6 @@ image={{
     ,
     classes={{ itemClasses: 'list-disc', Headline: 'text-m' }}
   >
-    <!-- <Fragment slot="content">
-     <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-       El Magnetismo de los Cuerpos: <br /><span class="text-xl">18 mayo 2025</span>
-     </h3>
-   </Fragment> -->
-
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
@@ -434,7 +361,8 @@ image={{
   <Content
     title='Juego, Eros y Celebración <br /><span class="text-xl">13 julio 2025</span>'
     ,
-    subtitle='En este taller os invitamos a permitir vivir un renacimiento, reconocimiento, exploración y reconexión entregándoos a la alegría, el placer y el gozo a través de la presencia de vuestros cuerpos.<br>En este taller vais aprender a reconectar con vuestra creatividad, entusiasmo, el deseo el juego y la fantasía a través de juegos sencillos y de conexión. La invitación es que a través de distintas exploraciones podáis descubrir nuevas vías para despertar a Eros en vuestros cuerpos.<br>El taller va a suceder en un templo donde vamos a dejarnos inspirar por las diferentes musas (la música, el amor, el arte, la poesía, etc… En este espacio van a haber diferentes y variadas propuestas y juegos. Cuánta falta nos hace jugar y celebrar! Si los niños aprenden jugando, nosotr@s también podemos hacerlo.<br><br>"Os aseguro que, si no volvéis a ser como niños, no entraréis en el reino de los cielos"<br>San Mateo (18, 1-5.10)<br><br>Un espacio donde nutriremos la conexión con el cuerpo, escucharemos y honraremos nuestra verdad personal, acogiendo nuestros límites y comunicándolos, pudiendo descubrir más formas de conectar con eros que no solo las típicas que imperan en nuestra vida cotidiana.''
+    subtitle='En este taller os invitamos a permitir vivir un renacimiento, reconocimiento, exploración y reconexión entregándoos a la alegría, el placer y el gozo a través de la presencia de vuestros cuerpos.<br>En este taller vais aprender a reconectar con vuestra creatividad, entusiasmo, el deseo el juego y la fantasía a través de juegos sencillos y de conexión. La invitación es que a través de distintas exploraciones podáis descubrir nuevas vías para despertar a Eros en vuestros cuerpos.<br>El taller va a suceder en un templo donde vamos a dejarnos inspirar por las diferentes musas (la música, el amor, el arte, la poesía, etc… En este espacio van a haber diferentes y variadas propuestas y juegos. Cuánta falta nos hace jugar y celebrar! Si los niños aprenden jugando, nosotr@s también podemos hacerlo.<br><br>"Os aseguro que, si no volvéis a ser como niños, no entraréis en el reino de los cielos"<br>San Mateo (18, 1-5.10)<br><br>Un espacio donde nutriremos la conexión con el cuerpo, escucharemos y honraremos nuestra verdad personal, acogiendo nuestros límites y comunicándolos, pudiendo descubrir más formas de conectar con eros que no solo las típicas que imperan en nuestra vida cotidiana.'
+    '
     ,
     items={[
       {
@@ -456,17 +384,7 @@ image={{
     }}
     ,
     classes={{ itemClasses: 'list-disc', Headline: 'text-m' }}
-  >
-    <!-- <Fragment slot="content">
-   <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-     El Magnetismo de los Cuerpos: <br /><span class="text-xl">18 mayo 2025</span>
-   </h3>
- </Fragment> -->
-
-    <!-- <Fragment slot="bg">
-   <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
- </Fragment> -->
-  </Content>
+  />
 
   <!-- Content Widget **************** -->
 
@@ -480,15 +398,13 @@ image={{
       {
         title: 'Presentación:',
         description:
-        'Este es un curso de profundización en pareja para  entrar en contacto con nuestra esencia gracias al espacio de intimidad. Aprender a amar y respetar nuestros cuerpos (sean como sean) y dejarlos "ser amor". Entender  que hacer el amor es algo sagrado, es una meditación más.<br>Estos días en la naturaleza y compartiendo con el grupo van a propiciar  la relajación y el disfrute de la energía vital que nos brinda el cuerpo, practicando distintas meditaciones, de dinámicas y ejercicios individuales  y/o en pareja para llevarlas luego a la vida cotidiana y seguir haciendo del tantra y el arte de la presencia un camino accesible y amable.',
+          'Este es un curso de profundización en pareja para  entrar en contacto con nuestra esencia gracias al espacio de intimidad. Aprender a amar y respetar nuestros cuerpos (sean como sean) y dejarlos "ser amor". Entender  que hacer el amor es algo sagrado, es una meditación más.<br>Estos días en la naturaleza y compartiendo con el grupo van a propiciar  la relajación y el disfrute de la energía vital que nos brinda el cuerpo, practicando distintas meditaciones, de dinámicas y ejercicios individuales  y/o en pareja para llevarlas luego a la vida cotidiana y seguir haciendo del tantra y el arte de la presencia un camino accesible y amable.',
       },
       {
         title: 'Para qué:',
         description:
           '<ul class="text-muted list-disc mt-3 ml-5"><li>Entrar en contacto con nuestra esencia gracias al espacio de intimidad</li><li>Amar y respetar nuestros cuerpos (sean como sean) y dejarlos "ser amor"</li><li>Aprender que hacer el amor es algo sagrado, es una meditación más</li><li>Introducir la relajación en nuestras vidas y disfrutar de la energía vital que nos brinda el cuerpo</li><li>Disfrutar de distintas meditaciones, de dinámicas y ejercicios individuales  y/o en pareja</li><li>Apreciar el arte de la presencia y cómo ésta nos puede ayudar tanto en nuestra vida cotidiana, como a hacer el amor</li></ul>',
       },
-      // 'En nuestra experiencia, compartirnos con otr@s parejas que están explorando este nivel de intimidad tan profundo, es muy enriquecedor e inspirador y propicia, mucha amorosidad y amabilidad con el propio camino de consciencia.<br><br>La jornada se divide en 3 partes:<br><ul class="text-muted list-disc mt-3 ml-5"><li>Por la mañana: compartimos en la sala tod@s juntos diferentes propuestas tántricas.</li><li>Por la tarde: practicamos en la intimidad y hacemos el amor con algunas pautas sugeridas (con nuestra pareja y en nuestra propia habitación)</li><li>Antes de cenar: hacemos un compartir (sólo quien lo siente) tod@s  junt@s en la sala, para ver cómo ha sido la vivencia personal.',
-                  
     ]}
     ,
     image={{
@@ -499,12 +415,6 @@ image={{
     ,
     classes={{ itemClasses: 'list-disc', Headline: 'text-m', Content: 'pb-0' }}
   >
-    <!-- <Fragment slot="content">
-  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-    El Magnetismo de los Cuerpos: <br /><span class="text-xl">18 mayo 2025</span>
-  </h3>
-</Fragment> -->
-
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
@@ -517,12 +427,12 @@ image={{
         description:
           '<ul class="text-muted list-disc mt-3 ml-5"><li>El arte del ritual en nuestras vidas</li><li>Meditación y sexualidad: la relación entre consciencia y energía</li><li>Sexo con K-Alma: acompasar la energía</li><li>La ola respiratoria y el cuerpo extático</li><li>Armonizar y liberar los bloqueos que impiden el libre fluir de la energía sexual</li><li>El arte de sublimar la energía sexual</li><li>Despertar el cuerpo gozoso a través del tacto</li><li>El arte de comunicar mis necesidades</li></ul>',
       },
-      
+
       {
         title: 'Conclusión:',
         description:
-          'En este retiro encontraréis: juegos, sorpresas, relajación, conexión con la naturaleza, sensibilidad, meditación, pasión, éxtasis, etc. y quizás también la posibilidad de poder abrazar, la vergüenza, el miedo, la vulnerabilidad, la tensión, el dolor, etc.<br>En nuestra experiencia, compartirnos con otr@s parejas que están explorando este nivel de intimidad tan profundo, es muy enriquecedor e inspirador y  propicia, mucha amorosidad y amabilidad con el propio camino de consciencia.'
-      }
+          'En este retiro encontraréis: juegos, sorpresas, relajación, conexión con la naturaleza, sensibilidad, meditación, pasión, éxtasis, etc. y quizás también la posibilidad de poder abrazar, la vergüenza, el miedo, la vulnerabilidad, la tensión, el dolor, etc.<br>En nuestra experiencia, compartirnos con otr@s parejas que están explorando este nivel de intimidad tan profundo, es muy enriquecedor e inspirador y  propicia, mucha amorosidad y amabilidad con el propio camino de consciencia.',
+      },
     ]}
     ,
     image={{
@@ -531,107 +441,13 @@ image={{
       aspectRatio: '1:1',
     }}
     ,
-    classes={{ container: 'pt-0 md:pt-0 lg:pt-0'}}
+    classes={{ container: 'pt-0 md:pt-0 lg:pt-0' }}
   >
-    <!-- <Fragment slot="content">
-  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-    El Magnetismo de los Cuerpos: <br /><span class="text-xl">18 mayo 2025</span>
-  </h3>
-</Fragment> -->
-
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
-  <!-- <Content
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Programa:',
-        description:
-          'Danza intuitiva para liberar tensiones y conectar con la pareja. Ejercicios de tacto consciente para comunicar amor y cuidado. Juegos de rol físico para explorar diferentes dinámicas de poder y vulnerabilidad.',
-      },
-      {
-        title: 'Conclusión:',
-        description:
-          'El Magnetismo de los Cuerpos es un taller para reconocer y celebrar tu cuerpo como el hogar de tu alma. Al cuidarte y vivenciarte plenamente en esta experiencia corporal y sensorial, te conviertes en pura irradiación y magnetismo. A través de tu cuerpo, el amor se despliega y se abre, convirtiendo el juego inocente de la dualidad en una pura celebración y disfrute. Este taller es una invitación a vivir y disfrutar del amor y la conexión íntima desde la profundidad de tu ser y el reconocimiento de tu cuerpo como tu templo sagrado.',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/3.webp',
-      alt: 'SaaS Businesses Image',
-    }}
-  >
-    <Fragment slot="content">      
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content> -->
-
-  <!-- Content Widget **************** -->
-  <!-- 
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description: `Your portfolio is your masterpiece, and AstroWind is your canvas. Whether you're a designer, photographer, artist, or any other creative professional, AstroWind empowers you to showcase your work with elegance and sophistication. Tailored to highlight your creative projects, AstroWind's templates offer a visually immersive experience that lets your portfolio shine.`,
-      },
-      {
-        title: 'Benefits:',
-        description: `Serve as a captivating backdrop to showcase your creative work, capturing attention and leaving a lasting impression. <br /> Tailor your portfolio to reflect your unique style and artistic vision. <br /> Prioritizes visuals, allowing you to present your work in high-resolution detail that draws viewers into your creations. <br /> Enables seamless navigation for effortless portfolio exploration.`,
-      },
-    ]}
-    image={{
-      src: '~/assets/images/5.webp',
-      alt: 'Portfolio Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Creative portfolios: <br /><span class="text-2xl">Highlighting your work</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content> -->
-
-  <!-- Content Widget **************** -->
-
-  <!-- <Content
-    items={[
-      {
-        title: 'Description:',
-        description: `For small businesses, a well-crafted website can be a game-changer. AstroWind empowers small businesses to not only establish a credible online presence but also convert visitors into loyal customers. The template's thoughtful design and optimization features ensure that your website doesn't just attract attention but also guides visitors through a seamless journey, ultimately leading to conversions.`,
-      },
-      {
-        title: 'Benefits:',
-        description: `Present your small business with a professional and polished website that instills confidence and trust among visitors. <br /> Strategically placed CTAs, user-friendly forms, and optimized layouts work together to drive user engagement and conversions. <br /> Ensure a smooth browsing experience, reducing bounce rates and encouraging interaction.`,
-      },
-    ]}
-    image={{
-      src: '~/assets/images/7.webp',
-      alt: 'Small Business Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Small business growth: <br /><span class="text-2xl">Converting visitors into customers</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content> -->
   <!-- Features Widget *************** -->
 
   <Features
@@ -641,151 +457,60 @@ image={{
     items={[
       {
         title: 'Herramientas',
-        description:  'Conocer y practicar distintas meditaciones y herramientas para traer consciencia a la relación dentro de un entorno cálido, responsable y amoroso',
+        description:
+          'Conocer y practicar distintas meditaciones y herramientas para traer consciencia a la relación dentro de un entorno cálido, responsable y amoroso',
         icon: 'tabler:brand-tailwind',
       },
       {
         title: 'Romper patrones',
-        description:  'Dejar de repetir dinámicas y patrones del pasado que saboteen el Amor Presente',
+        description: 'Dejar de repetir dinámicas y patrones del pasado que saboteen el Amor Presente',
         icon: 'tabler:seeding',
       },
       {
         title: 'Autenticidad y profundidad',
-        description:  'Instalar una intimidad más profunda, auténtica y gozosas, en parejas que inician una relación',
+        description: 'Instalar una intimidad más profunda, auténtica y gozosas, en parejas que inician una relación',
         icon: 'tabler:growth',
       },
       {
         title: 'Deseo',
-        description:  'Fortalecer la conexión y avivar la llama, en parejas de largo recorrido',
+        description: 'Fortalecer la conexión y avivar la llama, en parejas de largo recorrido',
         icon: 'tabler:heart',
       },
       {
         title: 'Activar el amor',
-        description:  'Aprender a generar un campo electromagnético de amor propio desde tu cuerpo',
+        description: 'Aprender a generar un campo electromagnético de amor propio desde tu cuerpo',
         icon: 'tabler:flower',
       },
       {
         title: 'Meditación',
-        description:  'Incluir la meditación en la intimidad, en la sexualidad y en la comunicación cotidiana',
+        description: 'Incluir la meditación en la intimidad, en la sexualidad y en la comunicación cotidiana',
         icon: 'tabler:heart-handshake',
       },
       {
         title: 'Habito',
-        description:  'Instalar el hábito cotidiano de generar momentos de calidad para y por la intimidad',
+        description: 'Instalar el hábito cotidiano de generar momentos de calidad para y por la intimidad',
         icon: 'tabler:plant',
       },
       {
         title: 'Compromiso',
-        description:  'Reafirmaros en el compromiso y la responsabilidad individual de vuestra propia felicidad',
+        description: 'Reafirmaros en el compromiso y la responsabilidad individual de vuestra propia felicidad',
         icon: 'tabler:plant-2',
       },
       {
         title: 'Conexion real',
-        description:  'Confiar en la conexión energética y de corazón, más que en los convencionalismos (creencias sociales-culturales) o las ideas entorno al amor romántico',
+        description:
+          'Confiar en la conexión energética y de corazón, más que en los convencionalismos (creencias sociales-culturales) o las ideas entorno al amor romántico',
         icon: 'tabler:leaf',
       },
-      // {
-      //     title: 'Astro + Tailwind CSS Integration',
-      //     description:
-      //       'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-      //     icon: 'tabler:brand-tailwind',
-      //   },
     ]}
   />
 
+  
+
   <!-- Slider -->
-<!-- <div data-hs-carousel='{
-  "loadingClasses": "opacity-0",
-  "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer",
-  "isAutoPlay": true,
-  "isAutoHeight": false,
-  "isCentered": false,
-  "isDraggable": true,
-  "slidesQty": {
-    "xs": 1,
-    "md": 2,
-    "lg": 3
-  }
-  }' class="relative">
-<div class="hs-carousel relative overflow-hidden w-full min-h-96 bg-white rounded-lg">
-  <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-    <div class="hs-carousel-slide">
-      <div class="flex justify-center h-full bg-gray-100 p-6">
-        <span class="self-center text-4xl text-gray-800 transition duration-700">
-          <Image
-                  class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
-                  width={500}
-                  height={500}
-                  widths={[768]}
-                  sizes="(max-width: 768px) 100vw, 432px"
-                  layout="responsive"
-                  src= '~/assets/images/238A6769.webp'
-                  alt= 'Del Hacer al Ser'                  
-          />
-        </span>
-      </div>
-    </div>
-    <div class="hs-carousel-slide">
-      <div class="flex justify-center h-full bg-gray-200 p-6">
-        <span class="self-center text-4xl text-gray-800 transition duration-700">
-          <Image
-                  class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
-                  width={500}
-                  height={500}
-                  widths={[768]}
-                  sizes="(max-width: 768px) 100vw, 432px"
-                  layout="responsive"
-                  src= '~/assets/images/238A7018.webp'
-                  alt= 'Del Hacer al Ser'                  
-          />
-        </span>
-      </div>
-    </div>
-    <div class="hs-carousel-slide">
-      <div class="flex justify-center h-full bg-gray-300 p-6">
-        <span class="self-center text-4xl text-gray-800 transition duration-700">
-          <Image
-                  class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
-                  width={500}
-                  height={500}
-                  widths={[768]}
-                  sizes="(max-width: 768px) 100vw, 432px"
-                  layout="responsive"
-                  src= '~/assets/images/238A7845.webp'
-                  alt= 'Del Hacer al Ser'                  
-          />
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<button type="button" class="hs-carousel-prev hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-s-lg">
-  <span class="text-2xl" aria-hidden="true">
-    <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="m15 18-6-6 6-6"></path>
-    </svg>
-  </span>
-  <span class="sr-only">Previous</span>
-</button>
-<button type="button" class="hs-carousel-next hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-e-lg">
-  <span class="sr-only">Next</span>
-  <span class="text-2xl" aria-hidden="true">
-    <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="m9 18 6-6-6-6"></path>
-    </svg>
-  </span>
-</button>
-
-<div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2"></div>
-</div> -->
-<!-- End Slider -->
-
-
-<!-- Satat Another Slider -->
-<!-- Slider -->
-<div class="px-4 lg:px-6 lg:px-8 py-10">
-  <div data-hs-carousel='{
+  <div class="px-4 lg:px-6 lg:px-8 py-10">
+    <div
+      data-hs-carousel='{
       "loadingClasses": "opacity-0",
       "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer",
       "isAutoPlay": true,
@@ -797,84 +522,191 @@ image={{
         "md": 1,
         "lg": 2
       }
-    }' class="relative">
-    <div class="hs-carousel relative overflow-hidden w-full h-[30rem] md:h-[calc(100vh-106px)]  bg-gray-100 rounded-2xl dark:bg-neutral-800">
-      <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-        <!-- Item -->
-        <div class="hs-carousel-slide">
-          <div class="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('~/assets/images/238A6769.webp')] bg-cover bg-center bg-no-repeat">
+    }'
+      class="relative"
+    >
+      <div
+        class="hs-carousel relative overflow-hidden w-full h-[30rem] md:h-[calc(100vh-106px)] bg-gray-100 rounded-2xl dark:bg-neutral-800"
+      >
+        <div
+          class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0"
+        >
+          <!-- Item -->
+          <div class="hs-carousel-slide">
+            <div
+              class="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('~/assets/images/238A6769.webp')] bg-cover bg-center bg-no-repeat"
+            >
+            </div>
           </div>
-        </div>
-        <!-- End Item -->
+          <!-- End Item -->
 
-        <!-- Item -->
-        <div class="hs-carousel-slide">
-          <div class="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('~/assets/images/238A7018.webp')] bg-cover bg-center bg-no-repeat">
+          <!-- Item -->
+          <div class="hs-carousel-slide">
+            <div
+              class="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('~/assets/images/238A7018.webp')] bg-cover bg-center bg-no-repeat"
+            >
+            </div>
           </div>
-        </div>
-        <!-- End Item -->
+          <!-- End Item -->
 
-        <!-- Item -->
-        <div class="hs-carousel-slide">
-          <div class="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('~/assets/images/238A7845.webp')] bg-cover bg-center bg-no-repeat">
+          <!-- Item -->
+          <div class="hs-carousel-slide">
+            <div
+              class="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('~/assets/images/238A7845.webp')] bg-cover bg-center bg-no-repeat"
+            >
+            </div>
           </div>
-        </div>
-        <!-- End Item -->
+          <!-- End Item -->
 
-        <!-- Item -->
-        <div class="hs-carousel-slide">
-          <div class="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('~/assets/images/238A7333.webp')] bg-cover bg-center bg-no-repeat">
+          <!-- Item -->
+          <div class="hs-carousel-slide">
+            <div
+              class="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('~/assets/images/238A7333.webp')] bg-cover bg-center bg-no-repeat"
+            >
+            </div>
           </div>
-        </div>
-        <!-- End Item -->
+          <!-- End Item -->
 
-        <!-- Item -->
-        <div class="hs-carousel-slide">
-          <div class="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('~/assets/images/238A7246.webp')] bg-cover bg-center bg-no-repeat">
+          <!-- Item -->
+          <div class="hs-carousel-slide">
+            <div
+              class="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('~/assets/images/238A7246.webp')] bg-cover bg-center bg-no-repeat"
+            >
+            </div>
           </div>
-        </div>
-        <!-- End Item -->
+          <!-- End Item -->
 
-        <!-- Item -->
-        <div class="hs-carousel-slide">
-          <div class="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('~/assets/images/238A7514.webp')] bg-cover bg-center bg-no-repeat">
+          <!-- Item -->
+          <div class="hs-carousel-slide">
+            <div
+              class="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('~/assets/images/238A7514.webp')] bg-cover bg-center bg-no-repeat"
+            >
+            </div>
           </div>
-        </div>
-        <!-- End Item -->
+          <!-- End Item -->
 
-        <!-- Item -->
-        <div class="hs-carousel-slide">
-          <div class="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('~/assets/images/238A6733.webp')] bg-cover bg-center bg-no-repeat">
+          <!-- Item -->
+          <div class="hs-carousel-slide">
+            <div
+              class="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-[url('~/assets/images/238A6733.webp')] bg-cover bg-center bg-no-repeat"
+            >
+            </div>
           </div>
+          <!-- End Item -->
         </div>
-        <!-- End Item -->
+      </div>
+
+      <!-- Arrows -->
+      <button
+        type="button"
+        class="hs-carousel-prev hs-carousel-disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-s-2xl focus:outline-none focus:bg-white/20"
+      >
+        <span class="text-2xl" aria-hidden="true">
+          <Icon
+            name="tabler:circle-arrow-left"
+            class="flex-shrink-0 mt-1 text-primary w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2"
+          />
+        </span>
+        <span class="sr-only">Previous</span>
+      </button>
+
+      <button
+        type="button"
+        class="hs-carousel-next hs-carousel-disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-e-2xl focus:outline-none focus:bg-white/20"
+      >
+        <span class="sr-only">Next</span>
+        <span class="text-2xl" aria-hidden="true">
+          <Icon
+            name="tabler:circle-arrow-right"
+            class="flex-shrink-0 mt-1 text-primary w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2"
+          />
+        </span>
+      </button>
+
+      <!-- End Arrows -->
+
+      <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2"></div>
+    </div>
+  </div>
+  <!-- End Slider -->
+
+
+
+<!-- Save the dates -->
+<Features2 id="fechas" title="Guardate las fechas" ,
+classes={{ container: 'pb-2 md:pb-2 lg:pb-2' }}>
+  <Fragment slot="subtitle">
+    <div class="mt-8 md:mt-12 relative m-auto max-w-5xl">
+      <div class="relative m-auto max-w-5xl grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1">
+        <DateCard startDay="Domingo" startMonth="ABR" startDate=" 6" note="Del Hacer<br>al Ser" />
+        <DateCard startDay="Domingo" startMonth="MAY" startDate="18" note="El Magnetismo<br>de los Cuerpos" />
+        <DateCard startDay="Domingo" startMonth="JUN" startDate="15" note="Contacto e<br>Intimidad" />
+        <DateCard startDay="Domingo" startMonth="JUL" startDate="13" note="Juego, Eros y<br>Celebración" />
+        <DateCard
+          startDay="Jueves"
+          startMonth="AGO"
+          startDate="21"
+          endDay="Domingo"
+          endMonth="AGO"
+          endDate="24"
+          note="Residencial:<br>Haz el Amor por Amor"
+        />
       </div>
     </div>
+  </Fragment>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Features2>
 
-    <!-- Arrows -->
-    <button type="button" class="hs-carousel-prev hs-carousel-disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-s-2xl focus:outline-none focus:bg-white/20">
-      <span class="text-2xl" aria-hidden="true">
-        <Icon name="tabler:circle-arrow-left" class="flex-shrink-0 mt-1 text-primary w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2"/>
-      </span>
-      <span class="sr-only">Previous</span>
-    </button>
+<!-- Steps2 Widget ****************** -->
 
-    <button type="button" class="hs-carousel-next hs-carousel-disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-e-2xl focus:outline-none focus:bg-white/20">
-      <span class="sr-only">Next</span>
-      <span class="text-2xl" aria-hidden="true">
-        <Icon name="tabler:circle-arrow-right" class="flex-shrink-0 mt-1 text-primary w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2"/>
-      </span>
-    </button>
+<Steps2
+title="Donde"
+subtitle="Lugares escogidos con amor, donde poderse entregar a la experiencia"
+isReversed={false}
+items={[
+  {
+    title: 'Talleres',
+    description: 'Vilanona y la Geltru, en espacio con parquing privado, posibilidad de traerse comida o ir a un restaurante cercano',
+    icon: 'tabler:home',
+  },
+  {
+    title: 'Residencial',
+    description:
+      'Casa Cal Faro, La Llacuna, Comarca de la Anoia, una casa en plena naturaleza, un lugar mágico, íntimo.',
+    icon: 'tabler:route',
+  },  
+]},
+    classes={{ container: 'pt-2 md:pt-2 lg:pt-2' }}
+>
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Steps2>
 
-    <!-- End Arrows -->
-
-    <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2"></div>
 
 
-  </div>
-</div>
-<!-- End Slider -->
-<!-- End another slider -->
+
+<!-- <Hero id="fechas" title="Guardate las fechas" subtitle="">
+  <Fragment slot="image">
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-1">
+      <DateCard startDay="Domingo" startMonth="ABR" startDate=" 6" note="Del Hacer<br>al Ser" />
+      <DateCard startDay="Domingo" startMonth="MAY" startDate="18" note="El Magnetismo<br>de los Cuerpos" />
+      <DateCard startDay="Domingo" startMonth="JUN" startDate="15" note="Contacto e<br>Intimidad" />
+      <DateCard startDay="Domingo" startMonth="JUL" startDate="13" note="Juego, Eros y<br>Celebración" />
+      <DateCard
+        startDay="Jueves"
+        startMonth="AGO"
+        startDate="21"
+        endDay="Domingo"
+        endMonth="AGO"
+        endDate="24"
+        note="Residencial:<br>Haz el Amor por Amor"
+      />
+    </div>
+  </Fragment>
+</Hero> -->
 
   <!-- Pricing Widget ******************* -->
 
@@ -922,7 +754,7 @@ image={{
         hasRibbon: true,
         ribbonTitle: '- 40 €',
       },
-      
+
       {
         title: 'Solo el residencial',
         subtitle: 'de 4 días y 3 noches',
@@ -935,7 +767,6 @@ image={{
           {
             description: '540€ precio alojamiento PC',
           },
-          
         ],
         callToAction: {
           target: '_blank',
@@ -957,7 +788,7 @@ image={{
           },
           {
             description: 'Dos sesiones de acompañamiento individual',
-          },          
+          },
         ],
         callToAction: {
           target: '_blank',
