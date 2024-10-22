@@ -1,0 +1,2 @@
+cwebp -q 80 -resize 1024 0 238A7845.jpg -o 238A7845.webp
+cwebp -q 80 -resize 0 1024 238A7845.jpg -o 238A7845.webp
