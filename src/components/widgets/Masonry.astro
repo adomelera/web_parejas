@@ -1,0 +1,41 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Image from '~/components/common/Image.astro';
+import { Icon } from 'astro-icon/components';
+
+const { images = [], id, classes = {}, arrows = true, bg = await Astro.slots.render('bg') } = Astro.props;
+let count = 0;
+let iseven = true;
+---
+
+<WidgetWrapper id={id} containerClass={`px-4 lg:px-6 lg:px-8 py-10 ${classes?.container ?? ''}`} bg={bg}>
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+      <div class="space-y-2"></div>
+      {          
+        images &&
+          images.map(({ url, description }) => (
+          // <img class="w-full h-auto object-cover" src={`'${url}'`} alt="Gallery Masonry Image">
+          <Image
+                  class="mx-auto rounded-md w-full"
+                  loading="lazy"
+                  src={url}
+                  alt={description || ''}
+                  aspectRatio="1:1"
+                />
+                
+            
+            
+        ))
+      }
+      </div>
+      
+    </div>
+  </div>
+</WidgetWrapper>
+
+<!--
+{count === 2 && iseven && count=count+1 &&(
+               </div>
+               <div class="space-y-2">
+-->
