@@ -30,11 +30,11 @@ const { startDay, startMonth, startDate, endDay, endMonth, endDate, note } = Ast
         <div class="flex justify-center items-baseline w-full">
           <div class="flex justify-center items-center mt-0">
             <div class="text-gray-500 text-xl font-semibold rotate-[270deg]">{startMonth}</div>
-            <div class="text-6xl font-bold ml-0">{startDate}</div>            
+            <div class="text-6xl font-semibold ml-0">{startDate}</div>            
             {endDate && 
-            <div class="mx-2 font-bold text-5xl">-</div>            
+            <div class="mx-2 font-semibold text-5xl">-</div>            
             <div class="text-gray-500 text-xl font-semibold rotate-[270deg]">{endMonth? endMonth : startMonth}</div>
-            <div class="text-6xl font-bold ml-0">{endDate}</div>}
+            <div class="text-6xl font-semibold ml-0">{endDate}</div>}
           </div>
         </div>
       </div>
