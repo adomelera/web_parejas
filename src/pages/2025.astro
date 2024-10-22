@@ -559,7 +559,7 @@ const metadata = {
 
 
 <!-- Save the dates -->
-<Features2 id="fechas" title="Guardate las fechas" ,
+<!-- <Features2 id="fechas" title="Guardate las fechas" ,
 classes={{ container: 'pb-2 md:pb-2 lg:pb-2' }}>
   <Fragment slot="subtitle">
     <div class="mt-8 md:mt-12 relative m-auto max-w-5xl">
@@ -583,14 +583,52 @@ classes={{ container: 'pb-2 md:pb-2 lg:pb-2' }}>
   <Fragment slot="bg">
     <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
   </Fragment>
-</Features2>
+</Features2> -->
+<Steps2
+title="Dónde y Cuándo"
+subtitle="Lugares escogidos con amor, donde poderse entregar a la experiencia.<br><br><strong>Talleres:</strong> Vilanova y la Geltru (provincia de Barcelona). Una sala amplia y luminosa con parquing privado.<br><br><strong>Residencial:</strong> Casa Cal Faro, La Llacuna (provincia de Barcelona). Una casa en plena naturaleza, un lugar mágico e íntimo."
+isReversed={false}
+
+items={[
+  {
+    title: 'Del Hacer al Ser',
+    description: '6 Abril 2025',
+    icon: 'tabler:plant-2',
+  },
+  {
+    title: 'El Magnetismo de los Cuerpos',
+    description: '18 Mayo 2025',
+    icon: 'tabler:magnet',
+  },
+  {
+    title: 'Contacto e Intimidad',
+    description: '15 Junio 2025',
+    icon: 'tabler:hand-stop',
+  },
+  {
+    title: 'Juego, Eros y Celebración',
+    description: '13 Julio 2025',
+    icon: 'tabler:flame',
+  },
+  {
+    title: 'Residencial: Haz el Amor por Amor',
+    description: '21 - 24 Agosto 2025',
+    icon: 'tabler:heart',
+  }, 
+]},
+    
+>
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</Steps2>
 
 <!-- Steps2 Widget ****************** -->
 
-<Steps2
-title="Donde"
+<!-- <Steps2
+title="Dónde"
 subtitle="Lugares escogidos con amor, donde poderse entregar a la experiencia"
-isReversed={false}
+isReversed={true}
 items={[
   {
     title: 'Talleres',
@@ -609,7 +647,7 @@ items={[
 <Fragment slot="bg">
   <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
 </Fragment>
-</Steps2>
+</Steps2> -->
 
 
 
