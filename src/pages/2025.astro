@@ -24,13 +24,14 @@ const metadata = {
     <Header
       position="left"
       links={[
-        { text: 'Ananda', href: 'https://www.espai-ananda.com/ananda/' },
-        { text: 'Ado', href: 'https://adomelera.com/' },
+        { text: 'Ananda', classes:'info-ananda', href: 'https://www.espai-ananda.com/ananda/' },
+        { text: 'Ado', classes:'info-ado',href: 'https://adomelera.com/' },
       ]}
       actions={[
         {
           text: 'Nos apuntamos',
           variant: 'primary',
+          classes: { class:'apuntamos-banner' },
           href: 'https://wa.me/34627591609/?text=Hola,%20Nos%20queremos%20apuntar%20a%20Sexo%20con%20K-Alma',
         },
       ]}
@@ -206,12 +207,14 @@ const metadata = {
           alt: 'Ado Melera',
         },
         testimonial: 'https://adomelera.com/',
+        
       },
     ]}
     callToAction={{
       target: '_blank',
       text: 'Mas información...',
-      href: '#',
+      href: '#',      
+      classes: { h1:'info-ananda',h2:'info-ado' },      
       icon: 'tabler:chevron-right',
     }}
   >
@@ -726,6 +729,7 @@ items={[
         callToAction: {
           target: '_blank',
           text: 'Nos apuntamos',
+          classes: { class:'apuntamos-1taller' },
           href: 'https://wa.me/34627591609/?text=Hola,%20Nos%20queremos%20apuntar%20a%20un%20taller%20de%20Sexo%20con%20K-Alma',
         },
       },
@@ -745,6 +749,7 @@ items={[
         callToAction: {
           target: '_blank',
           text: 'Nos apuntamos',
+          classes: { class:'apuntamos-todostaller' },
           href: 'https://wa.me/34627591609/?text=Hola,%20Nos%20queremos%20apuntar%20a%20todos%20los%20talleres%20de%20Sexo%20con%20K-Alma',
         },
         hasRibbon: true,
@@ -767,6 +772,7 @@ items={[
         callToAction: {
           target: '_blank',
           text: 'Nos apuntamos',
+          classes: { class:'apuntamos-residencial' },
           href: 'https://wa.me/34627591609/?text=Hola,%20Nos%20queremos%20apuntar%20al%20residencial%20de%20Sexo%20con%20K-Alma',
         },
       },
@@ -789,6 +795,7 @@ items={[
         callToAction: {
           target: '_blank',
           text: 'Nos apuntamos',
+          classes: { class:'apuntamos-completo' },
           href: 'https://wa.me/34627591609/?text=Hola,%20Nos%20queremos%20apuntar%20al%20recorrido%20completo%20de%20Sexo%20con%20K-Alma',
         },
         hasRibbon: true,
@@ -809,6 +816,7 @@ items={[
           target: '_blank',
           text: 'melera.ado@gmail.com',
           href: 'mailto:melera.ado@gmail.com',
+          classes: { class:'email-ado' },
           variant: 'link',
         },
       },
@@ -819,6 +827,7 @@ items={[
           target: '_blank',
           text: 'Envia whatsapp',
           href: 'https://wa.me/34680760473',
+          classes: { class:'whats-ado' },
           variant: 'link',
         },
       },
@@ -829,6 +838,7 @@ items={[
           target: '_blank',
           text: 'Envia whatsapp',
           href: 'https://wa.me/34627591609',
+          classes: { class:'whats-ananda' },
           variant: 'link',
         },
       },
