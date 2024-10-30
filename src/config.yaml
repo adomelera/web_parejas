@@ -13,8 +13,8 @@ metadata:
     template: '%s — Sexo con K-Alma'
   description: "significa incluir la meditación en la intimidad y en la sexualidad, significa recordar y recuperar el amor, la relajación y el gozo en la relación."
   robots:
-    index: false
-    follow: false
+    index: true
+    follow: true
   openGraph:
     site_name: Sexo con K-Alma
     images:
