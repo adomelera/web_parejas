@@ -6,12 +6,13 @@ import Prices from '~/components/widgets/Pricing.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
-import Testimonials2 from '~/components/widgets/Testimonials2.astro';
+import Facilitators from '~/components/widgets/Facilitators.astro';
 import Content from '~/components/widgets/Content.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Slider from '~/components/widgets/Slider.astro';
 import { YouTube } from 'astro-embed';
+
 
 const metadata = {
   title: 'Sexo con K-Alma',
@@ -24,8 +25,8 @@ const metadata = {
     <Header
       position="left"
       links={[
-        { text: 'Ananda', classes:'info-ananda', href: 'https://www.espai-ananda.com/ananda/' },
-        { text: 'Ado', classes:'info-ado',href: 'https://adomelera.com/' },
+        { text: 'Ananda', classes:'info-ananda', target:"_blank", href: 'https://www.espai-ananda.com/ananda/' },
+        { text: 'Ado', classes:'info-ado', target:"_blank", href: 'https://adomelera.com/' },
       ]}
       actions={[
         {
@@ -187,9 +188,9 @@ const metadata = {
 
   <!-- Steps Widget ****************** -->
 
-  <Testimonials2
+  <Facilitators
     title="Los facilitadores"
-    testimonials={[
+    facilitators={[
       {
         name: 'Deva Ananda',
         job: 'Respirar, meditar, bailar, y ser tocados desde el corazón nos ayuda a hacer cambios personales, a calmar nuestro sistema nervioso, disolviendo nuestros patrones equivocados, nuestras inercias y hábitos poco saludables. Recordar la confianza en la vida y en la muerte, y el goce de estar viva, es ahora mi camino de vida, de entrega, de deshacimiento de la falsedad para ser lo que Soy.',
@@ -197,7 +198,8 @@ const metadata = {
           src: '/images/ananda_cara.webp',
           alt: 'Deva Ananda',
         },
-        testimonial: 'https://www.espai-ananda.com/ananda/',
+        href: 'https://www.espai-ananda.com/ananda/',
+        className: 'info-ananda'
       },
       {
         name: 'Ado Melera',
@@ -206,8 +208,8 @@ const metadata = {
           src: '/images/ado_cara.webp',
           alt: 'Ado Melera',
         },
-        testimonial: 'https://adomelera.com/',
-        
+        href: 'https://adomelera.com/',
+        className: 'info-ado'        
       },
     ]}
     callToAction={{
