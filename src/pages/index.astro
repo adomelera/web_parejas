@@ -44,7 +44,7 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero
-    id="home"
+    id="principal"
     title="Sexo con K-Alma"
     tagline="Tantra para parejas"
     image={{ src: '/images/238A7333.webp', alt: 'Love' }}
@@ -66,6 +66,7 @@ const metadata = {
   </Hero>
 
   <Features3
+    id="un_viaje"
     title="Un Viaje de Conexión Íntima y Espiritual"
     subtitle="El Tantra te ofrece un camino para <strong>revitalizar</strong> y <strong>profundizar</strong> en tu relación íntima y sexual, trascendiendo lo físico hacia lo espiritual."
     columns={3}
@@ -148,6 +149,7 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
+    id="testimonios"
     title='Testimonios reales de "Sexo con K-Alma"'
     testimonials={[
       {
@@ -197,6 +199,7 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Facilitators
+    id="facilitadores"
     title="Los facilitadores"
     facilitators={[
       {
@@ -234,6 +237,7 @@ const metadata = {
   </Facilitators>
 
   <Steps
+    id="recorrido"
     title="Recorrido Sexo con K-Alma"
     subtitle="Talleres y residencial en la provincia de Barcelona"
     items={[
@@ -261,21 +265,20 @@ const metadata = {
         title: 'Residencial Haz el Amor por Amor',
         description: 'Recárgate de vitalidad. Hacer el amor: un acto de meditación y relajación.',
         icon: 'tabler:heart',
-      },
+      }
     ]}
     image={{
       src: '/images/555A9999.webp',
       alt: 'Steps image',
-    }}
+    }},
   />
 
   <!-- Content Widget **************** -->
 
   <Content
+    id="del_hacer_al_ser"
     title='Del Hacer al Ser<br /><span class="text-xl">6 abril 2025</span>'
-    ,
     subtitle="En un mundo lleno de <strong>distracciones y desafíos</strong>, reconectar con tu ser interior y con tu pareja puede ser un viaje <strong>profundamente transformador</strong>. Este taller está diseñado para ayudarte a <strong>reconocer quién eres</strong>, deshacer tus miedos y resistencias con la ayuda del amor, y descubrir que no estás sol@ en este camino. Antes de fundirte con el otro, es esencial que te fundas con tu propio ser, trasciendas tus <strong>autolimitaciones</strong> y la sensación de que eres errón@, te destiles como ser humano para brillar ante ti y ante tu pareja. ¡Queremos que te vuelvas a <strong>enamorar de ti mism@</strong> y de tu pareja!"
-    ,
     isReversed
     items={[
       {
@@ -289,13 +292,11 @@ const metadata = {
           'En este taller descubrirás la importancia del <strong>descanso</strong> y el valor del <strong>no esfuerzo</strong> en la intimidad. Los momentos de relajación (k-alma), gozo y placer serán tu forma de recarga necesaria para sostener tu propio bienestar y el de tu relación. Cuanto más habites tu cuerpo, más conocerás y sabrás escuchar tus propias <strong>necesidades</strong> y respetar y comprender las de tu compañer@. Al estar conectad@ a las sensaciones corporales, te traerá el abrazo del presente, lo cual te permitirá estar más en sintonía con tu ser interior.',
       },
     ]}
-    ,
     image={{
       src: '/images/238A6733.webp',
       alt: 'Del Hacer al Ser',
       aspectRatio: '1:1',
     }}
-    ,
     classes={{ itemClasses: 'list-disc', Headline: 'text-m' }}
   >
     <Fragment slot="bg">
@@ -306,10 +307,9 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
+    id="el_magnetismo_de_los_cuerpos"
     title='El Magnetismo de los Cuerpos<br /><span class="text-xl">18 mayo 2025</span>'
-    ,
     subtitle="Cuando ya sabes quién eres y has conectado profundamente con tu ser interior, es momento de cuidar tu <strong>templo: el cuerpo</strong>, el hogar de tu alma. Este taller está diseñado para que te vivas plenamente en esta <strong>experiencia corporal y sensorial</strong>, reconociendo tu cuerpo como tu preciado tesoro. Al reconocerte y cuidarte, te conviertes en pura <strong>irradiación</strong>, brillando y atrayendo naturalmente. A través de tu cuerpo, el amor se despliega y se abre, y el juego inocente de la dualidad se convierte en una pura <strong>celebración y disfrute</strong>.<br>Cuando os unís en pareja, las <strong>bioenergías</strong> de vuestros cuerpos crean una experiencia vital extática a través de la atracción de las polaridades opuestas, como dos imanes que crean un campo magnético: femenino (receptivo) - masculino (emisivo)."
-    ,
     items={[
       {
         title: 'Programa:',
@@ -322,23 +322,20 @@ const metadata = {
           'Este taller te permitirá <strong>reconocer y celebrar</strong> tu cuerpo como el hogar de tu alma. Al cuidarte y vivenciarte plenamente en esta experiencia corporal y sensorial, te convertirás en pura <strong>irradiación y magnetismo</strong>. A través de tu cuerpo, el amor se desplegará y se abrirá, convirtiendo el juego inocente de la dualidad en una pura <strong>celebración y disfrute</strong>. Este taller es una invitación a vivir y disfrutar del amor y la conexión íntima desde la <strong>profundidad de tu ser</strong> y el reconocimiento de tu cuerpo como tu templo sagrado.',
       },
     ]}
-    ,
     image={{
       src: '/images/238A7833.webp',
       alt: 'El Magnetismo de los Cuerpos',
       aspectRatio: '1:1',
     }}
-    ,
     classes={{ itemClasses: 'list-disc', Headline: 'text-m' }}
   />
 
   <!-- Content Widget **************** -->
 
   <Content
+    id="contacto_e_intimidad"
     title='Contacto e Intimidad<br /><span class="text-xl">15 junio 2025</span>'
-    ,
     subtitle="El Tantra te invita a escuchar el cuerpo como <strong>vehículo para conectar</strong> con el Ser. El tacto como meditación será tu puerta hacia una <strong>conexión profunda y significativa</strong>. Te facilitará poder adentrarte en un espacio de <strong>relajación, placer y fusión</strong>, donde la sexualidad y la intimidad se ponen a merced del corazón.<br>Este taller está diseñado para que explores y experimentes el contacto con tus necesidades y con la <strong>ternura que nutre</strong> la relación. A través del tacto y el contacto, cultivarás un espacio de <strong>presencia, comunicación y entrega pura</strong>, permitiendo que la intimidad florezca."
-    ,
     isReversed
     items={[
       {
@@ -352,13 +349,11 @@ const metadata = {
           'La intimidad será tu espacio <strong>seguro y poderoso</strong> donde podrás conocerte y conectar de manera auténtica. A través de la <strong>meditación del tacto</strong>, explorarás tus paisajes emocionales, te comunicarás honestamente, y descubrirás nuevas formas de relacionarte. Este taller te invita a profundizar en la <strong>versión más verdadera</strong> de ti mism@, creando un vínculo más fuerte y auténtico basado en el <strong>amor y la comprensión mutua</strong>.',
       },
     ]}
-    ,
     image={{
       src: '/images/238A7251.webp',
       alt: 'Contacto e Intimidad',
       aspectRatio: '1:1',
     }}
-    ,
     classes={{ itemClasses: 'list-disc', Headline: 'text-m' }}
   >
     <Fragment slot="bg">
@@ -369,11 +364,9 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
+    id="juego_eros_y_celebracion"
     title='Juego, Eros y Celebración <br /><span class="text-xl">13 julio 2025</span>'
-    ,
     subtitle='Te invitamos a vivir un <strong>renacimiento</strong>, reconocimiento, exploración y reconexión, entregándote a la <strong>creatividad</strong>, el entusiasmo, el deseo, el juego y la fantasía; a través de juegos sencillos y de conexión. A través de distintas exploraciones y dinámicas descubrirás nuevas vías para despertar a <strong>Eros</strong> en tu cuerpo.<br>El taller sucederá en un templo donde nos dejaremos inspirar por las diferentes <strong>musas</strong> (la música, el arte, la poesía, etc). ¡Cuánta falta nos hace jugar y celebrar!<br><br>"Os aseguro que, si no volvéis a ser como niños, no entraréis en el reino de los cielos"<br>San Mateo (18, 1-5.10)'
-    '
-    ,
     items={[
       {
         title: 'Programa:',
@@ -386,23 +379,20 @@ const metadata = {
           'En un mundo donde se premia la productividad, la rapidez y la eficacia, aprenderás a vivenciarte de una manera <strong>consciente y auténtica</strong> para crear nuevas conexiones conscientes, amorosas y respetuosas contigo mism@ y con tu pareja en un <strong>ambiente cuidado y seguro</strong>. Navegarás y explorarás vías de conexión con el <strong>placer y el amor</strong> a través de tu intimidad y te darás permiso para habitarte como ser sensual en un espacio libre de juicio, conectando en pareja a través del <strong>Eros</strong>. Vivirás un viaje muy <strong>sanador y enriquecedor</strong> para tu relación. En este taller nutrirás la conexión con tu cuerpo, escucharás y honrarás tu <strong>verdad personal</strong>, acogiendo tus límites y comunicándolos, pudiendo descubrir más formas de conectar con Eros que no solo las típicas que imperan en tu vida cotidiana.',
       },
     ]}
-    ,
     image={{
       src: '/images/238A6929.webp',
       alt: 'Juego, Eros y Celebración',
       aspectRatio: '1:1',
     }}
-    ,
     classes={{ itemClasses: 'list-disc', Headline: 'text-m' }}
   />
 
   <!-- Content Widget **************** -->
 
   <Content
-    title='Residencial Haz el Amor por Amor<br /><span class="text-xl">del 21 al 24 de agosto 2025</span>'
-    ,
+    id="haz_el_amor_por_amor"
+    title='Residencial Haz el Amor por Amor<br /><span class="text-xl">del 21 al 24 de agosto 2025</span>'    
     subtitle="Te proponemos dedicar unos días en plena naturaleza para <strong>profundizar en tu relación</strong>, sentir y vibrar desde el centro del corazón y que el acto de hacer el amor se convierta en el medio donde recordar tu <strong>capacidad extática y expansiva</strong>.<br>En este retiro encontrarás: juegos, sorpresas, <strong>relajación</strong>, conexión, sensibilidad, meditación, pasión, éxtasis, y quizás también la posibilidad de poder abrazar, la vergüenza, el miedo, la vulnerabilidad, la tensión, el dolor, etc.<br>Toda la formación es puramente práctica."
-    ,
     isReversed
     items={[
       {
@@ -416,13 +406,11 @@ const metadata = {
           '<ul class="text-muted list-disc mt-3 ml-5"><li>Entrar en contacto con nuestra esencia gracias al espacio de intimidad.</li><li>Amar y respetar nuestros cuerpos (sean como sean) y dejarlos "ser amor".</li><li>Aprender que hacer el amor es algo sagrado, es una meditación más.</li><li>Introducir la relajación en nuestras vidas y disfrutar de la energía vital que nos brinda el cuerpo.</li><li>Disfrutar de distintas meditaciones, de dinámicas y ejercicios individuales y/o en pareja.</li><li>Apreciar el arte de la presencia y cómo ésta nos puede ayudar tanto en nuestra vida cotidiana, como a la hora de hacer el amor.</li></ul>',
       },
     ]}
-    ,
     image={{
       src: '/images/238A6794.webp',
       alt: 'Residencial Haz el Amor por Amor',
       aspectRatio: '1:1',
     }}
-    ,
     classes={{ itemClasses: 'list-disc', Headline: 'text-m', Content: 'pb-0' }}
   >
     <Fragment slot="bg">
@@ -431,26 +419,24 @@ const metadata = {
   </Content>
 
   <Content
+    id="programa"
     items={[
       {
         title: 'Programa:',
         description:
           '<ul class="text-muted list-disc mt-3 ml-5"><li>El arte del ritual en nuestras vidas.</li><li>Meditación y sexualidad: la relación entre consciencia y energía.</li><li>Sexo con K-Alma: acompasar la energía.</li><li>La ola respiratoria y el cuerpo extático.</li><li>Armonizar y liberar los bloqueos que impiden el libre fluir de la energía sexual.</li><li>El arte de sublimar la energía sexual.</li><li>Despertar el cuerpo gozoso a través del tacto.</li><li>El arte de comunicar mis necesidades.</li></ul>',
       },
-
       {
         title: 'En esencia:',
         description:
           'Estos días en la naturaleza y compartiendo con el grupo propiciarán tu <strong>relajación</strong> y el disfrute de la energía vital que te brinda el cuerpo. Practicarás distintas <strong>meditaciones, dinámicas y ejercicios</strong> individuales y/o en pareja para llevarlos luego a tu vida cotidiana y seguir haciendo del tantra y el arte de la presencia, un <strong>camino accesible y amable</strong>.<br>En nuestra experiencia, cuando te compartes con otras parejas que están explorando este nivel de <strong>intimidad tan profundo</strong>, vivirás una experiencia muy <strong>enriquecedora e inspiradora</strong> que te infundirá mucha <strong>confianza y compromiso</strong> con tu propio camino de consciencia.',
       },
     ]}
-    ,
     image={{
       src: '/images/238A8105.webp',
       alt: 'Residencial Haz el Amor por Amor',
       aspectRatio: '1:1',
     }}
-    ,
     classes={{ container: 'pt-0 md:pt-0 lg:pt-0' }}
   >
     <Fragment slot="bg">
@@ -461,7 +447,7 @@ const metadata = {
   <!-- Features Widget *************** -->
 
   <Features
-    id="features"
+    id="que_aporta"
     title="Que os puede aportar este recorrido"
     subtitle=""
     items={[
@@ -515,67 +501,69 @@ const metadata = {
     ]}
   />
 
-  <Slider id="fotos" , images = {[
-    {
-      url: '/images/slides/238A7514.webp',
-      description: false
-    },
-    {
-      url: '/images/slides/238A8029.webp'
-    },    
-    {
-      url: '/images/slides/238A7262.webp'
-    },
-    {
-      url: '/images/slides/238A7867.webp'
-    },
-    {
-      url: '/images/slides/238A7482.webp'
-    },
-    {
-      url: '/images/slides/238A7543.webp'
-    },
-    {
-      url: '/images/slides/238A7544.webp'
-    },
-    {
-      url: '/images/slides/238A7870.webp'
-    },
-    {
-      url: '/images/slides/238A8028.webp'
-    },
-    {
-      url: '/images/slides/238A7542.webp'
-    },
-    {
-      url: '/images/slides/238A8025.webp'
-    },
-    {
-      url: '/images/slides/238A7565.webp'
-    },
-    {  
-      url: '/images/slides/238A7630.webp'
-    },
-    {
-      url: '/images/slides/238A7821.webp'
-    },
-    {
-      url: '/images/slides/238A7268.webp'
-    },
-    { 
-      url: '/images/slides/238A7620.webp'
-    },
-    {
-      url: '/images/slides/238A7599.webp'
-    },
-    {
-      url: '/images/slides/238A7612.webp'
-    },
-    {
-      url: '/images/slides/238A8005.webp'
-    },
-    
-  ]}/>
+  <Slider 
+    id="fotos"
+    images = {[
+      {
+        url: '/images/slides/238A7514.webp',
+        description: false
+      },
+      {
+        url: '/images/slides/238A8029.webp'
+      },    
+      {
+        url: '/images/slides/238A7262.webp'
+      },
+      {
+        url: '/images/slides/238A7867.webp'
+      },
+      {
+        url: '/images/slides/238A7482.webp'
+      },
+      {
+        url: '/images/slides/238A7543.webp'
+      },
+      {
+        url: '/images/slides/238A7544.webp'
+      },
+      {
+        url: '/images/slides/238A7870.webp'
+      },
+      {
+        url: '/images/slides/238A8028.webp'
+      },
+      {
+        url: '/images/slides/238A7542.webp'
+      },
+      {
+        url: '/images/slides/238A8025.webp'
+      },
+      {
+        url: '/images/slides/238A7565.webp'
+      },
+      {  
+        url: '/images/slides/238A7630.webp'
+      },
+      {
+        url: '/images/slides/238A7821.webp'
+      },
+      {
+        url: '/images/slides/238A7268.webp'
+      },
+      { 
+        url: '/images/slides/238A7620.webp'
+      },
+      {
+        url: '/images/slides/238A7599.webp'
+      },
+      {
+        url: '/images/slides/238A7612.webp'
+      },
+      {
+        url: '/images/slides/238A8005.webp'
+      },    
+    ]}
+  />
   <!-- const carru=new HSCarousel(document.getElementById("fotos"),{
     "loadingClasses": "opacity-0",
     "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer",
@@ -594,47 +582,47 @@ const metadata = {
 
 
 <Steps2
-title="Dónde y Cuándo"
-subtitle="Lugares escogidos con amor, donde poderse entregar a la experiencia.<br><br><strong>Talleres:</strong> Vilanova y la Geltru (provincia de Barcelona). Una sala amplia y luminosa con parquing privado.<br><br><strong>Residencial:</strong> Casa Cal Faro, La Llacuna (provincia de Barcelona). Una casa en plena naturaleza, un lugar mágico e íntimo."
-isReversed={false}
-
-items={[
-  {
-    title: 'Del Hacer al Ser',
-    description: '6 Abril 2025',
-    icon: 'tabler:plant-2',
-  },
-  {
-    title: 'El Magnetismo de los Cuerpos',
-    description: '18 Mayo 2025',
-    icon: 'tabler:magnet',
-  },
-  {
-    title: 'Contacto e Intimidad',
-    description: '15 Junio 2025',
-    icon: 'tabler:hand-stop',
-  },
-  {
-    title: 'Juego, Eros y Celebración',
-    description: '13 Julio 2025',
-    icon: 'tabler:flame',
-  },
-  {
-    title: 'Residencial: Haz el Amor por Amor',
-    description: '21 - 24 Agosto 2025',
-    icon: 'tabler:heart',
-  }, 
-]},
-    
+  id="donde_cuando"
+  title="Dónde y Cuándo"
+  subtitle="Lugares escogidos con amor, donde poderse entregar a la experiencia.<br><br><strong>Talleres:</strong> Vilanova y la Geltru (provincia de Barcelona). Una sala amplia y luminosa con parquing privado.<br><br><strong>Residencial:</strong> Casa Cal Faro, La Llacuna (provincia de Barcelona). Una casa en plena naturaleza, un lugar mágico e íntimo."
+  isReversed={false}
+  items={[
+    {
+      title: 'Del Hacer al Ser',
+      description: '6 Abril 2025',
+      icon: 'tabler:plant-2',
+    },
+    {
+      title: 'El Magnetismo de los Cuerpos',
+      description: '18 Mayo 2025',
+      icon: 'tabler:magnet',
+    },
+    {
+      title: 'Contacto e Intimidad',
+      description: '15 Junio 2025',
+      icon: 'tabler:hand-stop',
+    },
+    {
+      title: 'Juego, Eros y Celebración',
+      description: '13 Julio 2025',
+      icon: 'tabler:flame',
+    },
+    {
+      title: 'Residencial: Haz el Amor por Amor',
+      description: '21 - 24 Agosto 2025',
+      icon: 'tabler:heart',
+    }, 
+  ]}    
 >
-<Fragment slot="bg">
-  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-</Fragment>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
 </Steps2>
 
   <!-- Pricing Widget ******************* -->
 
   <Prices
+    id="modalidades"
     title="Modalidades"
     subtitle="¿Que opción escogéis?"
     prices={[
@@ -730,6 +718,7 @@ items={[
   />
 
   <Features3
+    id="contacto"
     title="Todavía con dudas"
     subtitle="Nos encantará atenderte"
     columns={3}
