@@ -26,7 +26,7 @@ const metadata = {
       position="left"
       links={[
         { text: 'Ananda', classes:'info-ananda', target:"_blank", href: 'https://www.espai-ananda.com/ananda/' },
-        { text: 'Ado', classes:'info-ado', target:"_blank", href: 'https://adomelera.com/' },
+        { text: 'Ado', classes:'info-ado', target:"", href: '/ado_melera' },
       ]}
       actions={[
         {
@@ -211,7 +211,8 @@ const metadata = {
           alt: 'Deva Ananda',
         },
         href: 'https://www.espai-ananda.com/ananda/',
-        className: 'info-ananda'
+        className: 'info-ananda',
+        target: "_blank"
       },
       {
         name: 'Ado Melera',
@@ -220,8 +221,9 @@ const metadata = {
           src: '/images/ado_cara.webp',
           alt: 'Ado Melera',
         },
-        href: 'https://adomelera.com/',
-        className: 'info-ado'        
+        href: '/ado_melera',
+        className: 'info-ado',
+        target: ""        
       },
     ]}
     callToAction={{
