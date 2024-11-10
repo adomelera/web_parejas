@@ -9,6 +9,7 @@ import Steps from '~/components/widgets/Steps.astro';
 import Slider from '~/components/widgets/Slider.astro';
 import Image from '~/components/common/Image.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { YouTube } from 'astro-embed';
 
 const metadata = {
   title: 'Sexo con K-Alma',
@@ -19,14 +20,12 @@ const metadata = {
   <Fragment slot="announcement"></Fragment>
   <Fragment slot="header">
     <Header
-    position="left"
-    links={[      
-      { text: 'Ado Melera', classes:'', target:"", href: '#masinfo' },
-    ]}     
+      sitename="Ado Melera"
+      position="left"
       actions={[
         {
           text: 'Volver',
-          variant: 'primary',          
+          variant: 'primary',
           href: '/',
         },
       ]}
@@ -50,7 +49,7 @@ const metadata = {
       {
         title: 'Mi compromiso:',
         description:
-          'Creo un <strong>espacio seguro y confidencial</strong> donde podréis explorar vuestros desafíos y disfrutar de un acompañamiento a medida. Durante nuestras sesiones, ya sea de manera individual o en pareja, me enfocaré en <strong>escucharte con atención</strong>, identificar patrones y creencias limitantes, y <strong>co-crear soluciones</strong> que os lleven a un mayor bienestar y conexión.<br><br>Trabajo en forma presencial a domicilio o en mi espacio en Molins de Rei, también puedes trabajar conmigo online por videollamada.'
+          'Creo un <strong>espacio seguro y confidencial</strong> donde podréis explorar vuestros desafíos y disfrutar de un acompañamiento a medida. Durante nuestras sesiones, ya sea de manera individual o en pareja, me enfocaré en <strong>escucharte con atención</strong>, identificar patrones y creencias limitantes, y <strong>co-crear soluciones</strong> que os lleven a un mayor bienestar y conexión.<br><br>Trabajo en forma presencial a domicilio o en mi espacio en Molins de Rei, también puedes trabajar conmigo online por videollamada.',
       },
     ]}
     image={{
@@ -67,10 +66,9 @@ const metadata = {
 
   <CallToAction
     id="ado_opiniones"
-    title='Lo que dicen de mi quienes han vivido el recorrido Sexo con k-Alma'
-    subtitle = '<br><p>"Gracias Ado por tu mirada de apertura, comprensión y amor."</p><strong>Clara</strong><br><br><p>"Me ha conmovido profundamente tu entrega y sensibilidad. Tu intuición y tu visión delicada de los procesos emocionales es extraordinaria. Agradezco esa parte masculina que acompaña y sostiene, sin necesidad de guiar ni imponer."</p><strong>Roser</strong><br><br><p>"Es una persona extremadamente respetuosa, con una energía muy hermosa. Me ayudó a sentirme cómoda desde el primer minuto."</p><strong>Francesca</strong><br><br><p>"¡Su manera de comunicar y mostrar comprensión es verdaderamente impresionante y ayuda muchísimo!"</p><strong>F.F.</strong>'
-  >
-  </CallToAction>
+    title="Lo que dicen de mi quienes han vivido el recorrido Sexo con k-Alma"
+    subtitle='<br><p>"Gracias Ado por tu mirada de apertura, comprensión y amor."</p><strong>Clara</strong><br><br><p>"Me ha conmovido profundamente tu entrega y sensibilidad. Tu intuición y tu visión delicada de los procesos emocionales es extraordinaria. Agradezco esa parte masculina que acompaña y sostiene, sin necesidad de guiar ni imponer."</p><strong>Roser</strong><br><br><p>"Es una persona extremadamente respetuosa, con una energía muy hermosa. Me ayudó a sentirme cómoda desde el primer minuto."</p><strong>Francesca</strong><br><br><p>"¡Su manera de comunicar y mostrar comprensión es verdaderamente impresionante y ayuda muchísimo!"</p><strong>F.F.</strong>'
+  />
 
   <Features3
     id="ado_servicios_pareja"
@@ -82,13 +80,13 @@ const metadata = {
       {
         title: 'Comunicación y Conexión',
         description:
-         '¿Sientes que la comunicación con tu pareja se ha vuelto difícil o distante? Juntos, <strong>exploraremos herramientas</strong> de comunicación no violenta y estrategias para establecer vínculos más sanos y profundos. <strong>Aprenderéis</strong> a resolver conflictos de manera constructiva y a priorizar la conexión en vuestra relación.',
+          '¿Sientes que la comunicación con tu pareja se ha vuelto difícil o distante? Juntos, <strong>exploraremos herramientas</strong> de comunicación no violenta y estrategias para establecer vínculos más sanos y profundos. <strong>Aprenderéis</strong> a resolver conflictos de manera constructiva y a priorizar la conexión en vuestra relación.',
         icon: 'tabler:heart',
       },
       {
         title: 'Sexualidad y Bienestar',
         description:
-          'La sexualidad es una <strong>fuente de vitalidad</strong>, pero también puede ser un área compleja llena de traumas y creencias limitantes. Te acompañaré en un <strong>proceso de sanación</strong> y autoconocimiento, para que puedas <strong>transformar tu sexualidad</strong> en una experiencia de placer, intimidad y autocuidado.',        
+          'La sexualidad es una <strong>fuente de vitalidad</strong>, pero también puede ser un área compleja llena de traumas y creencias limitantes. Te acompañaré en un <strong>proceso de sanación</strong> y autoconocimiento, para que puedas <strong>transformar tu sexualidad</strong> en una experiencia de placer, intimidad y autocuidado.',
         icon: 'tabler:plant',
       },
       {
@@ -104,10 +102,10 @@ const metadata = {
       style: 'object-position: 80% 40%;',
     }}
   >
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
-</Features3>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features3>
 
   <Steps
     id="ado_proceso"
@@ -151,13 +149,11 @@ const metadata = {
     }}
   />
 
-  
- 
   <Testimonials
     id="ado_testimonios"
     title="Testimonios"
     subtitle="Mis clientes han experimentado <strong>profundos cambios</strong> en sus relaciones después de trabajar conmigo. Aquí tienes algunos testimonios que reflejan el impacto:"
-    testimonials={[     
+    testimonials={[
       {
         testimonial: `Ado tiene una presencia que te hacen sentir acogido y respetado. Nos guió para volver a confiar el uno en el otro y comunicarnos de verdad. Gracias a sus sesiones, hemos fortalecido nuestra conexión emocional e íntima, recordando por qué nos enamoramos inicialmente. Su enfoque delicado pero efectivo nos ha permitido abordar temas sensibles con naturalidad, transformando nuestra relación a mejor.`,
         name: 'Lucía',
@@ -190,49 +186,48 @@ const metadata = {
       target: '_blank',
     }}
   >
-  <Fragment slot="bottom">    
-    <div class="w-full h-auto object-cover rounded-xl mx-auto bg-gray-500 shadow-lg">
-    <Image
-              class="w-full h-80 object-cover rounded-xl mx-auto bg-gray-500 shadow-lg"
-              width="auto"
-              height={500}
-              widths={[1024]}
-              layout="fullWidth"              
-              src={'/images/ado/238A7599.webp'}
-              alt='group'
-              style='object-position: 55% 50%'
-            />
-          </div>     
-  </Fragment> 
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment> 
-</Testimonials>
-
+    <Fragment slot="bottom">
+      <div class="w-full h-auto object-cover rounded-xl mx-auto bg-gray-500 shadow-lg">
+        <Image
+          class="w-full h-80 object-cover rounded-xl mx-auto bg-gray-500 shadow-lg"
+          width="auto"
+          height={500}
+          widths={[1024]}
+          layout="fullWidth"
+          src={'/images/ado/238A7599.webp'}
+          alt="group"
+          style="object-position: 55% 50%"
+        />
+      </div>
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Testimonials>
 
   <Features
     id="ado_beneficios"
     title="Beneficios"
-    subtitle=""    
+    subtitle=""
     items={[
       {
         title: 'Mejora tu escucha activa y empatía',
         description:
           'Con estas técnicas, aprenderás a escuchar de forma más activa y a conectar emocionalmente con tu pareja.',
-          icon: 'tabler:ear',
+        icon: 'tabler:ear',
       },
       {
         title: 'Comunica de forma asertiva y respetuosa',
         description:
           'Desarrollarás habilidades de comunicación que te permitirán expresarte de manera clara y respetuosa con tu pareja.',
-          icon: 'tabler:brand-hipchat',
+        icon: 'tabler:brand-hipchat',
       },
       {
         title: 'Resuelve conflictos de manera colaborativa',
         description:
           'Aprenderás a enfrentar y resolver los conflictos con tu pareja de una forma constructiva y cooperativa.',
-          icon: 'tabler:heart-handshake',
-        },
+        icon: 'tabler:heart-handshake',
+      },
       {
         title: 'Fortalece la confianza y seguridad emocional',
         description:
@@ -269,8 +264,8 @@ const metadata = {
         title: 'Mejora tu circulación energética y desbloquea retenciones',
         description:
           'Desarrollarás técnicas que te ayudarán a mejorar tu flujo energético y desbloquear cualquier retención.',
-          icon: 'tabler:recycle',
-        },
+        icon: 'tabler:recycle',
+      },
       {
         title: 'Fortalece la confianza y capacidad de cuidar del otro',
         description: 'Aprenderás a cuidar y confiar más en tu pareja, fortaleciendo así los lazos entre vosotros.',
@@ -278,7 +273,8 @@ const metadata = {
       },
       {
         title: 'Desarrolla habilidades de masaje para aplicar en casa',
-        description: 'Aprenderás técnicas de masaje que te permitirán brindar momentos de relajación y bienestar a tu pareja.',
+        description:
+          'Aprenderás técnicas de masaje que te permitirán brindar momentos de relajación y bienestar a tu pareja.',
         icon: 'tabler:hearts',
       },
     ]}
@@ -292,18 +288,18 @@ const metadata = {
       },
       {
         url: '/images/ado/238A6752c.webp',
-      },      
+      },
       {
         url: '/images/ado/238A7032.webp',
-      },      
+      },
       {
         url: '/images/ado/238A7125.webp',
-      }, 
-            
+      },
+
       {
         url: '/images/ado/238A7016.webp',
       },
-      
+
       {
         url: '/images/ado/238A7186.webp',
       },
@@ -318,16 +314,16 @@ const metadata = {
       },
       {
         url: '/images/ado/238A7128.webp',
-      },            
+      },
       {
         url: '/images/ado/238A7845.webp',
       },
       {
         url: '/images/ado/238A7127.webp',
-      },      
+      },
       {
         url: '/images/ado/238A7136c.webp',
-      },      
+      },
       {
         url: '/images/ado/238A7470.webp',
       },
@@ -336,10 +332,10 @@ const metadata = {
       },
       {
         url: '/images/ado/238A8138.webp',
-      },      
+      },
       {
         url: '/images/ado/238A7058.webp',
-      },      
+      },
       {
         url: '/images/ado/238A7297.webp',
       },
@@ -355,26 +351,26 @@ const metadata = {
     ]}
   />
 
-  <CallToAction      
-    title='Videollamada Gratuita'
-    subtitle = '¿Te gustaría explorar cómo puedo acompañarte a ti y a tu pareja en vuestro proceso de crecimiento? Te ofrezco una <strong>videollamada gratuita</strong> de 20 minutos, donde podremos conversar sobre tus desafíos actuales y cómo podría ser el trabajo conjunto. ¡<strong>Agenda tu cita</strong> hoy mismo!'
+  <CallToAction
+    title="Videollamada Gratuita"
+    subtitle="¿Te gustaría explorar cómo puedo acompañarte a ti y a tu pareja en vuestro proceso de crecimiento? Te ofrezco una <strong>videollamada gratuita</strong> de 20 minutos, donde podremos conversar sobre tus desafíos actuales y cómo podría ser el trabajo conjunto. ¡<strong>Agenda tu cita</strong> hoy mismo!"
     actions={[
       {
         variant: 'primary',
         text: '¡Pídela ahora!',
         href: 'https://wa.me/34680760473/?text=Hola Ado,%20Nos%20gustaria%20pedirte%20una%20videollamada',
-        target: '_blank',        
+        target: '_blank',
       },
-    ]}    
->
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
-</CallToAction>
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </CallToAction>
 
   <Features3
     title="¡Sigueme!"
-    subtitle='Para no perderte ningun taller ni tip'
+    subtitle="Para no perderte ningun taller ni tip"
     columns={3}
     items={[
       {
@@ -384,7 +380,7 @@ const metadata = {
           target: '_blank',
           text: 'adomelera.com',
           href: 'https://adomelera.com/',
-          classes: { class:'web-ado' },
+          classes: { class: 'web-ado' },
           variant: 'link',
         },
       },
@@ -395,30 +391,55 @@ const metadata = {
           target: '_blank',
           text: '@adomelera',
           href: 'https://www.instagram.com/adomelera/',
-          classes: { class:'insta-ado' },
+          classes: { class: 'insta-ado' },
           variant: 'link',
         },
       },
       {
         title: 'Reseñas google',
-        icon: 'tabler:brand-google',        
+        icon: 'tabler:brand-google',
         callToAction: {
           target: '_blank',
           text: 'Masajista ★★★★★',
           href: 'https://bit.ly/adomelera-testimonios',
-          classes: { class:'reviews-ado' },
+          classes: { class: 'reviews-ado' },
           variant: 'link',
         },
       },
     ]}
   >
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
   </Features3>
 
-  <div class='sk-instagram-feed p-10' data-embed-id='25485538'></div>
-  <script src='https://widgets.sociablekit.com/instagram-feed/widget.js' is:inline async defer></script>
+  <div class="grid grid-cols-1 gap-3 px-10 py-16 sm:grid-cols-5">
+    <div class="col-span-2">
+      <YouTube id="aDrGKb-eAsc" title="Ejemplo de tip" />
+      <style is:inline>
+        lite-youtube[videoid="aDrGKb-eAsc"] {
+          margin: 0 auto;
+          height: 20rem;
+          aspect-ratio: 9/16;
+          border-radius: 0.75rem;
+        }
+      </style>
+    </div>
+    <div class="col-span-3">
+      <YouTube id="e9O4tkCdnQ8" title="Testimonios de un taller" />
+      <style is:inline>
+        lite-youtube[videoid="e9O4tkCdnQ8"] {
+          margin: 0 auto;
+          height: 20rem;
+          aspect-ratio: 1/1;
+          border-radius: 0.75rem;
+        }
+      </style>
+    </div>
+  </div>
+
+  <div class="sk-instagram-feed p-10" data-embed-id="25485538"></div>
+  <script src="https://widgets.sociablekit.com/instagram-feed/widget.js" is:inline async defer></script>
 
   <Fragment slot="footer"></Fragment>
 </Layout>
