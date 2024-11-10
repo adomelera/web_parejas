@@ -1,0 +1,449 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Slider from '~/components/widgets/Slider.astro';
+import Image from '~/components/common/Image.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Sexo con K-Alma',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+    position="left"
+    links={[      
+      { text: 'Ado Melera', classes:'', target:"", href: '#masinfo' },
+    ]}     
+      actions={[
+        {
+          text: 'Volver',
+          variant: 'primary',          
+          href: '/',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+
+  <!-- espacio de acompañamiento personalizado para parejas -->
+  <Content
+    id="masinfo"
+    title="Más información"
+    subtitle="<strong>Te doy la bienvenida</strong>. Permíteme presentarme y explicarte cómo puedo acompañarte"
+    isReversed
+    items={[
+      {
+        title: 'Ado Melera:',
+        description:
+          'Mi nombre es Ado Melera y me <strong>apasiona ayudarte</strong> a ti y a tu pareja a fortalecer vuestra conexión, mejorar vuestra comunicación y <strong>redescubrir la magia</strong> de vuestra sexualidad. Cada relación es única, por eso me comprometo a ofrecerte un <strong>apoyo personalizado</strong>, basado en tu situación particular y vuestros objetivos como pareja.',
+      },
+      {
+        title: 'Mi compromiso:',
+        description:
+          'Creo un <strong>espacio seguro y confidencial</strong> donde podréis explorar vuestros desafíos y disfrutar de un acompañamiento a medida. Durante nuestras sesiones, ya sea de manera individual o en pareja, me enfocaré en <strong>escucharte con atención</strong>, identificar patrones y creencias limitantes, y <strong>co-crear soluciones</strong> que os lleven a un mayor bienestar y conexión.<br><br>Trabajo en forma presencial a domicilio o en mi espacio en Molins de Rei, también puedes trabajar conmigo online por videollamada.'
+      },
+    ]}
+    image={{
+      src: '/images/ado/238A6722c.webp',
+      alt: 'Bienvenida',
+      style: 'aspect-ratio: 1/1; object-fit: cover;',
+    }}
+    classes={{ itemClasses: 'list-disc', Headline: 'text-m' }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <CallToAction
+    title='Lo que dicen de mi quienes han vivido el recorrido Sexo con k-Alma'
+    subtitle = '<br><p>"Gracias Ado por tu mirada de apertura, comprensión y amor."</p><strong>Clara</strong><br><br><p>"Me ha conmovido profundamente tu entrega y sensibilidad. Tu intuición y tu visión delicada de los procesos emocionales es extraordinaria. Agradezco esa parte masculina que acompaña y sostiene, sin necesidad de guiar ni imponer."</p><strong>Roser</strong><br><br><p>"Es una persona extremadamente respetuosa, con una energía muy hermosa. Me ayudó a sentirme cómoda desde el primer minuto."</p><strong>Francesca</strong><br><br><p>"¡Su manera de comunicar y mostrar comprensión es verdaderamente impresionante y ayuda muchísimo!"</p><strong>F.F.</strong>'
+  >
+  </CallToAction>
+
+  <Features3
+    title="Servicios para Parejas"
+    subtitle=""
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'Comunicación y Conexión',
+        description:
+         '¿Sientes que la comunicación con tu pareja se ha vuelto difícil o distante? Juntos, <strong>exploraremos herramientas</strong> de comunicación no violenta y estrategias para establecer vínculos más sanos y profundos. <strong>Aprenderéis</strong> a resolver conflictos de manera constructiva y a priorizar la conexión en vuestra relación.',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'Sexualidad y Bienestar',
+        description:
+          'La sexualidad es una <strong>fuente de vitalidad</strong>, pero también puede ser un área compleja llena de traumas y creencias limitantes. Te acompañaré en un <strong>proceso de sanación</strong> y autoconocimiento, para que puedas <strong>transformar tu sexualidad</strong> en una experiencia de placer, intimidad y autocuidado.',        
+        icon: 'tabler:plant',
+      },
+      {
+        title: 'Masaje Terapéutico',
+        description:
+          'Los masajes pueden ser una <strong>herramienta poderosa</strong> para conectar con tu pareja de una manera profunda y nutritiva. Te ofrezco sesiones de masaje terapéutico, donde también puedes <strong>aprender a dar masajes</strong> a tu pareja, fortaleciendo así vuestro vínculo y vuestra capacidad de cuidaros mutuamente.',
+        icon: 'tabler:leaf',
+      },
+    ]}
+    image={{
+      src: '/images/ado/238A6837.webp',
+      alt: 'Love',
+      style: 'object-position: 80% 40%;',
+    }}
+  >
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Features3>
+
+  <Steps
+    title="Proceso de trabajo"
+    subtitle="Así trabajaremos juntos"
+    items={[
+      {
+        title: 'Reunión de Exploración',
+        description:
+          'Conversaremos sobre vuestros objetivos, retos actuales y expectativas para nuestro trabajo juntos.',
+        icon: 'tabler:binoculars',
+      },
+      {
+        title: 'Diseño del Plan de Acción',
+        description:
+          'Juntos, diseñaremos un <strong>plan personalizado</strong> que aborde vuestras necesidades específicas de una manera integral.',
+        icon: 'tabler:sitemap',
+      },
+      {
+        title: 'Sesiones de Acompañamiento',
+        description:
+          'Realizaremos sesiones individuales y/o de pareja, aplicando diversas <strong>herramientas y técnicas</strong> para lograr los cambios. Este proceso incluye ejercicios prácticos entre encuentros para <strong>fortalecer tu desarrollo</strong> y acelerar la transformación deseada.',
+        icon: 'tabler:rotate-clockwise-2',
+      },
+      {
+        title: 'Seguimiento y Ajustes',
+        description:
+          'Evaluaremos periódicamente tu progreso y haremos los ajustes necesarios para asegurar el cumplimiento de vuestras metas.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Empoderamiento y Autonomía',
+        description:
+          'Al finalizar nuestro trabajo, te brindaré las <strong>herramientas</strong> y el apoyo necesarios para que podáis continuar vuestro proceso de crecimiento de manera autónoma.',
+        icon: 'tabler:arrows-maximize',
+      },
+    ]}
+    image={{
+      src: '/images/ado/238A8004.webp',
+      alt: 'Steps image',
+    }}
+  />
+
+  
+ 
+  <Testimonials
+    title="Testimonios"
+    subtitle="Mis clientes han experimentado <strong>profundos cambios</strong> en sus relaciones después de trabajar conmigo. Aquí tienes algunos testimonios que reflejan el impacto:"
+    testimonials={[     
+      {
+        testimonial: `Ado tiene una presencia que te hacen sentir acogido y respetado. Nos guió para volver a confiar el uno en el otro y comunicarnos de verdad. Gracias a sus sesiones, hemos fortalecido nuestra conexión emocional e íntima, recordando por qué nos enamoramos inicialmente. Su enfoque delicado pero efectivo nos ha permitido abordar temas sensibles con naturalidad, transformando nuestra relación a mejor.`,
+        name: 'Lucía',
+        //job: '',
+        image: {
+          src: '/images/anonima1.webp',
+          alt: 'Lucía',
+        },
+      },
+      {
+        testimonial: `---`,
+        name: 'Martín',
+        //job: '',
+        image: {
+          src: '/images/anonimo1.webp',
+          alt: 'Martín',
+        },
+      },
+      {
+        testimonial: `Apenas encuentro palabras para describir esta maravillosa experiencia. Ado es súper respetuoso y crea de manera muy fácil un espacio seguro. Tuve la sensación de que en todo momento sabía lo que necesitaba... Cómo si intuyera que parte de mi cuerpo necesitaba ser tocada ... Y al tocar con su presencia.. Mi cuerpo se pudo relajar completamente y movilizar energía estancada. Estoy muy agradecida de esta experiencia.. y días después me siento mucho más abierta...`,
+        name: 'Amanda',
+        //job: '',
+        image: {
+          src: '/images/anonima2.webp',
+          alt: 'Amanda',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '_blank',
+    }}
+  >
+  <Fragment slot="bottom">    
+    <div class="w-full h-auto object-cover rounded-xl mx-auto bg-gray-500 shadow-lg">
+    <Image
+              class="w-full h-80 object-cover rounded-xl mx-auto bg-gray-500 shadow-lg"
+              width="auto"
+              height={500}
+              widths={[1024]}
+              layout="fullWidth"              
+              src={'/images/ado/238A7599.webp'}
+              alt='group'
+              style='object-position: 55% 50%'
+            />
+          </div>     
+  </Fragment> 
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment> 
+</Testimonials>
+
+
+  <Features
+    id="beneficios"
+    title="Beneficios"
+    subtitle=""    
+    items={[
+      {
+        title: 'Mejora tu escucha activa y empatía',
+        description:
+          'Con estas técnicas, aprenderás a escuchar de forma más activa y a conectar emocionalmente con tu pareja.',
+          icon: 'tabler:ear',
+      },
+      {
+        title: 'Comunica de forma asertiva y respetuosa',
+        description:
+          'Desarrollarás habilidades de comunicación que te permitirán expresarte de manera clara y respetuosa con tu pareja.',
+          icon: 'tabler:brand-hipchat',
+      },
+      {
+        title: 'Resuelve conflictos de manera colaborativa',
+        description:
+          'Aprenderás a enfrentar y resolver los conflictos con tu pareja de una forma constructiva y cooperativa.',
+          icon: 'tabler:heart-handshake',
+        },
+      {
+        title: 'Fortalece la confianza y seguridad emocional',
+        description:
+          'Trabajarás en construir una base de confianza y seguridad emocional que fortalecerá tu relación de pareja.',
+        icon: 'tabler:bolt',
+      },
+      {
+        title: 'Sana heridas y traumas relacionados con la sexualidad',
+        description:
+          'Podrás sanar las heridas y traumas que afectan tu sexualidad, para disfrutar plenamente con tu pareja.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Recupera el disfrute y satisfacción sexual',
+        description: 'Descubrirás cómo puedes recuperar el disfrute y la satisfacción sexual en tu relación.',
+        icon: 'tabler:confetti',
+      },
+      {
+        title: 'Desarrolla una sexualidad más consciente y plena',
+        description: 'Aprenderás a cultivar una sexualidad más presente, consciente y satisfactoria con tu pareja.',
+        icon: 'tabler:om',
+      },
+      {
+        title: 'Fortalece la intimidad y conexión con tu pareja',
+        description: 'Investigarás formas de profundizar la intimidad y conexión emocional con tu pareja.',
+        icon: 'tabler:plug-connected',
+      },
+      {
+        title: 'Reduce el estrés y las tensiones acumuladas',
+        description: 'Encontrarás maneras de liberar el estrés y las tensiones que afectan tu relación de pareja.',
+        icon: 'tabler:compass',
+      },
+      {
+        title: 'Mejora tu circulación energética y desbloquea retenciones',
+        description:
+          'Desarrollarás técnicas que te ayudarán a mejorar tu flujo energético y desbloquear cualquier retención.',
+          icon: 'tabler:recycle',
+        },
+      {
+        title: 'Fortalece la confianza y capacidad de cuidar del otro',
+        description: 'Aprenderás a cuidar y confiar más en tu pareja, fortaleciendo así los lazos entre vosotros.',
+        icon: 'tabler:empathize',
+      },
+      {
+        title: 'Desarrolla habilidades de masaje para aplicar en casa',
+        description: 'Aprenderás técnicas de masaje que te permitirán brindar momentos de relajación y bienestar a tu pareja.',
+        icon: 'tabler:hearts',
+      },
+    ]}
+  />
+
+  
+  
+
+  
+ 
+
+  
+  
+  
+  
+
+
+
+  <!-- <div class='sk-ww-google-reviews' data-embed-id='25485530'></div>
+  <script src='https://widgets.sociablekit.com/google-reviews/widget.js' is:inline async defer></script> -->
+  <!-- <iframe id="googlereview" src='https://widgets.sociablekit.com/google-reviews/iframe/25485530'
+  frameborder='0' width='400px' height='600px' 
+  style="margin: auto; maxwidth:400px"></iframe>
+
+  <div class='sk-instagram-feed' data-embed-id='25485538'></div>
+  <script src='https://widgets.sociablekit.com/instagram-feed/widget.js' is:inline async defer></script> -->
+  <!-- <iframe src='https://widgets.sociablekit.com/google-reviews/iframe/25485530'
+   frameborder='0' width='400px' height='600px' 
+   style="margin: auto; maxwidth:400px"></iframe>
+
+   <iframe src='https://widgets.sociablekit.com/instagram-feed/iframe/25485538'
+    frameborder='0' width='100%' height='1000'
+    style="margin: auto; maxwidth:400px"></iframe> -->
+
+  <Slider
+    id="fotos_ado"
+    images={[
+      {
+        url: '/images/ado/238A8303.webp',
+      },
+      {
+        url: '/images/ado/238A6752c.webp',
+      },      
+      {
+        url: '/images/ado/238A7032.webp',
+      },      
+      {
+        url: '/images/ado/238A7125.webp',
+      }, 
+            
+      {
+        url: '/images/ado/238A7016.webp',
+      },
+      
+      {
+        url: '/images/ado/238A7186.webp',
+      },
+      {
+        url: '/images/ado/238A7901.webp',
+      },
+      {
+        url: '/images/ado/238A8122.webp',
+      },
+      {
+        url: '/images/ado/238A7361.webp',
+      },
+      {
+        url: '/images/ado/238A7128.webp',
+      },            
+      {
+        url: '/images/ado/238A7845.webp',
+      },
+      {
+        url: '/images/ado/238A7127.webp',
+      },      
+      {
+        url: '/images/ado/238A7136c.webp',
+      },      
+      {
+        url: '/images/ado/238A7470.webp',
+      },
+      {
+        url: '/images/ado/238A7586.webp',
+      },
+      {
+        url: '/images/ado/238A8138.webp',
+      },      
+      {
+        url: '/images/ado/238A7058.webp',
+      },      
+      {
+        url: '/images/ado/238A7297.webp',
+      },
+      {
+        url: '/images/ado/238A6755c.webp',
+      },
+      {
+        url: '/images/ado/238A7021.webp',
+      },
+      {
+        url: '/images/ado/238A6842.webp',
+      },
+    ]}
+  />
+
+  <CallToAction      
+    title='Videollamada Gratuita'
+    subtitle = '¿Te gustaría explorar cómo puedo acompañarte a ti y a tu pareja en vuestro proceso de crecimiento? Te ofrezco una <strong>videollamada gratuita</strong> de 20 minutos, donde podremos conversar sobre tus desafíos actuales y cómo podría ser el trabajo conjunto. ¡<strong>Agenda tu cita</strong> hoy mismo!'
+    actions={[
+      {
+        variant: 'primary',
+        text: '¡Pídela ahora!',
+        href: 'https://wa.me/34680760473/?text=Hola Ado,%20Nos%20gustaria%20pedirte%20una%20videollamada',
+        target: '_blank',        
+      },
+    ]}    
+>
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+  </CallToAction>
+
+  <Features3
+    title="¡Sigueme!"
+    subtitle='Para no perderte ningun taller ni tip'
+    columns={3}
+    items={[
+      {
+        title: 'Mi web',
+        icon: 'tabler:world-www',
+        callToAction: {
+          target: '_blank',
+          text: 'adomelera.com',
+          href: 'https://adomelera.com/',
+          classes: { class:'web-ado' },
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Mi instagram',
+        icon: 'tabler:brand-instagram',
+        callToAction: {
+          target: '_blank',
+          text: '@adomelera',
+          href: 'https://www.instagram.com/adomelera/',
+          classes: { class:'insta-ado' },
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Reseñas google',
+        icon: 'tabler:brand-google',        
+        callToAction: {
+          target: '_blank',
+          text: 'Masajista ★★★★★',
+          href: 'https://bit.ly/adomelera-testimonios',
+          classes: { class:'reviews-ado' },
+          variant: 'link',
+        },
+      },
+    ]}
+  >
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+  </Features3>
+
+  <div class='sk-instagram-feed p-10' data-embed-id='25485538'></div>
+  <script src='https://widgets.sociablekit.com/instagram-feed/widget.js' is:inline async defer></script>
+
+  <Fragment slot="footer"></Fragment>
+</Layout>
