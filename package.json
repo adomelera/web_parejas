@@ -14,7 +14,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier -w .",
-    "lint:eslint": "eslint ."
+    "lint:eslint": "eslint .",
+    "no_toolbar": "astro preferences disable devToolbar"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.6",
