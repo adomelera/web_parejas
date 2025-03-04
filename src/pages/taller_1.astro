@@ -87,49 +87,34 @@ const metadata = {
   subtitle="Para hacer la reserva para el taller de Tantra en pareja: Del hacer al Ser<br><br>🏠Lugar: l'Arbre . Vilanova I la Geltrú<br>📆Fecha: 6 de abril de 10h a 19h<br>💰Precio: 160€ por pareja<br><br>Hacer el ingreso de 60€ en el número de cuenta a nombre de:<br>SANDRA MARTÍN FERRÉ<br>  NCC: BE56 9677 7690 4688<br>BIC: TRWIBEB1XXX<br>Dirección de Wise:<br>Rue du Trône 100, 3rd floor<br>Brussels 1050 (Belgium)<br><br>Concepto:  vuestros nombres<br><br>Una vez realizado enviar el comprobante por WhatsApp(627.591.609)"
   />
 
-  <Steps2
-  id="recorrido"
-  title="Recorrido Sexo con K-Alma"
-  subtitle="Lugares escogidos con amor, donde poderse entregar a la experiencia.<br><br><strong>Talleres:</strong> <a class='text-decoration-line: underline' href='https://www.instagram.com/larbrevng' target='_blank'>L'Arbre</a>, Vilanova y la Geltru (provincia de Barcelona). Una sala amplia y luminosa con parking privado.<br><br><strong>Residencial:</strong> <a class='text-decoration-line: underline' href='https://www.instagram.com/casacalfaro' target='_blank'>Casa Cal Faro</a>, La Llacuna (provincia de Barcelona). Una casa en plena naturaleza, un lugar mágico e íntimo."
-  isReversed={false}
-  items={[
-    {
-      title: 'Del Hacer al Ser<br /><span class="text-sm">6 abril 2025</span>',
-      description: 'Deja de hacer, baja el ritmo, siente y maravíllate de ser.',
-      icon: 'tabler:plant-2',
-    },
-    {
-      title: 'El Magnetismo de los Cuerpos<br /><span class="text-sm">18 Mayo 2025</span>',
-      description: 'Polaridad, magnetismo, circuito bioenergético: déjate ser fluido.',
-      icon: 'tabler:magnet',
-    },
-    {
-      title: 'Contacto e Intimidad<br /><span class="text-sm">15 Junio 2025</span>',
-      description: 'Ábrete al tacto, conecta profundamente, despierta una nueva intimidad.',
-      icon: 'tabler:hand-stop',
-    },
-    {
-      title: 'Juego, Eros y Celebración<br /><span class="text-sm">13 Julio 2025</span>',
-      description: 'Entreguémonos a la alegría, al juego, al placer y al gozo.',
-      icon: 'tabler:flame',
-    },
-    {
-      title: 'Residencial Haz el Amor por Amor<br /><span class="text-sm">21 - 24 Agosto 2025</span>',
-      description: 'Recárgate de vitalidad. Hacer el amor: un acto de meditación y relajación.',
-      icon: 'tabler:heart',
-    }
-  ]}    
->
+  <Features3
+  id="politica_cancelacion"
+  title="Política de cancelación"
+  subtitle="<ul><li>En ningún caso se devuelve en efectivo la reserva.</li><li>Si canceláis con más de 30 días de antelación, de la fecha de realización del taller o residencial, se guarda el importe de la reserva para el año que viene.</li><li>Lamentablemente, si la cancelación se produce con menos de 30 días el importe de la reserva se pierde.</li></ul>"
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features3>
+
+  <Features3
+  id="celebramos"
+  title="¡Celebramos este paso tan importante que estáis dando!"
+  subtitle="Con amor, 💞 Ado & Ananda"
+  >
   <Fragment slot="bg">
     <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
   </Fragment>
-</Steps2>
+</Features3>
 
+  
+
+  
 
   <Features3
     id="contacto"
-    title="Cómo contactar con nosotros"
-    subtitle="Nos encantará atenderte"
+    title="¿Tenéis alguna duda?"
+    subtitle="Nos encantará atenderos"
     columns={3}
     items={[
       {
@@ -165,12 +150,73 @@ const metadata = {
           variant: 'link',
         },
       },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
     ]}
   >
     <!-- <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment> -->
   </Features3>
+
+  <Steps2
+  id="recorrido"
+  title="Información del recorrido completo 'Sexo con K-Alma'"
+  isReversed={false}
+  items={[
+    {
+      title: 'Del Hacer al Ser<br /><span class="text-sm">6 abril 2025</span>',
+      description: 'Deja de hacer, baja el ritmo, siente y maravíllate de ser.',
+      icon: 'tabler:plant-2',
+    },
+    {
+      title: 'El Magnetismo de los Cuerpos<br /><span class="text-sm">18 Mayo 2025</span>',
+      description: 'Polaridad, magnetismo, circuito bioenergético: déjate ser fluido.',
+      icon: 'tabler:magnet',
+    },
+    {
+      title: 'Contacto e Intimidad<br /><span class="text-sm">15 Junio 2025</span>',
+      description: 'Ábrete al tacto, conecta profundamente, despierta una nueva intimidad.',
+      icon: 'tabler:hand-stop',
+    },
+    {
+      title: 'Juego, Eros y Celebración<br /><span class="text-sm">13 Julio 2025</span>',
+      description: 'Entreguémonos a la alegría, al juego, al placer y al gozo.',
+      icon: 'tabler:flame',
+    },
+    {
+      title: 'Residencial Haz el Amor por Amor<br /><span class="text-sm">21 - 24 Agosto 2025</span>',
+      description: 'Recárgate de vitalidad. Hacer el amor: un acto de meditación y relajación.',
+      icon: 'tabler:heart',
+    }
+  ]}    
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Steps2>
+
+
+  
 
   <Fragment slot="footer"></Fragment>
 </Layout>
