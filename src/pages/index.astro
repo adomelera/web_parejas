@@ -11,6 +11,7 @@ import Content from '~/components/widgets/Content.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Slider from '~/components/widgets/Slider.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 import { YouTube } from 'astro-embed';
 
 
@@ -30,10 +31,11 @@ const metadata = {
       ]}
       actions={[
         {
-          text: 'Nos apuntamos',
+          text: 'Más información',
           variant: 'primary',
+          target: '_blank',
           classes: { class:'apuntamos-banner' },
-          href: 'https://wa.me/34627591609/?text=Hola,%20Nos%20queremos%20apuntar%20a%20Sexo%20con%20K-Alma',
+          href: 'https://form.jotform.com/250611771078052',
         },
       ]}
       isSticky
@@ -163,15 +165,15 @@ const metadata = {
       },
       {
         testimonial: `Siento mucha alegría, mucha conexión conmigo mismo y la verdad que agradezco mucho las propuestas porque te mueven a conectar contigo antes que con la otra persona y además sientes un espacio seguro, un espacio que va creciendo cada vez más a lo largo del recorrido`,
-        name: 'Luís',
+        name: 'Luis',
         //job: '',
         image: {
           src: '/images/anonimo1.webp',
-          alt: 'Luís',
+          alt: 'Luis',
         },
       },
       {
-        testimonial: `Me siento llena de amor, he conectado con la vitalidad, con la gratitud; me encanta con el cuidado y el respeto que manejan las propuestas. Hay al mismo tiempo ligereza, juego y diversión y a mí me ayuda mucho a bajar la tierra, a conectar con mi cuerpo, con el presente`,
+        testimonial: `Me siento llena de amor, he conectado con la vitalidad, con la gratitud; me encanta con el cuidado y el respeto que manejan las propuestas. Hay al mismo tiempo ligereza, juego y diversión y a mí me ayuda mucho a bajar a tierra, a conectar con mi cuerpo, con el presente`,
         name: 'Noelia',
         //job: '',
         image: {
@@ -228,7 +230,7 @@ const metadata = {
     ]}
     callToAction={{
       target: '_blank',
-      text: 'Mas información...',
+      text: 'Ir a la página personal...',
       href: '#',      
       classes: { h1:'info-ananda',h2:'info-ado' },      
       icon: 'tabler:chevron-right',
@@ -451,7 +453,7 @@ const metadata = {
 
   <Features
     id="que_aporta"
-    title="Que os puede aportar este recorrido"
+    title="Qué os puede aportar este recorrido"
     subtitle=""
     items={[
       {
@@ -587,7 +589,7 @@ const metadata = {
 <Steps2
   id="donde_cuando"
   title="Dónde y Cuándo"
-  subtitle="Lugares escogidos con amor, donde poderse entregar a la experiencia.<br><br><strong>Talleres:</strong> <a class='text-decoration-line: underline' href='https://www.instagram.com/larbrevng' target='_blank'>L'Arbre</a>, Vilanova y la Geltru (provincia de Barcelona). Una sala amplia y luminosa con parquing privado.<br><br><strong>Residencial:</strong> <a class='text-decoration-line: underline' href='https://www.instagram.com/casacalfaro' target='_blank'>Casa Cal Faro</a>, La Llacuna (provincia de Barcelona). Una casa en plena naturaleza, un lugar mágico e íntimo."
+  subtitle="Lugares escogidos con amor, donde poderse entregar a la experiencia.<br><br><strong>Talleres:</strong> <a class='text-decoration-line: underline' href='https://www.instagram.com/larbrevng' target='_blank'>L'Arbre</a>, Vilanova i la Geltrú (provincia de Barcelona). Una sala amplia y luminosa con parking privado.<br><br><strong>Residencial:</strong> <a class='text-decoration-line: underline' href='https://www.instagram.com/casacalfaro' target='_blank'>Casa Cal Faro</a>, La Llacuna (provincia de Barcelona). Una casa en plena naturaleza, un lugar mágico e íntimo."
   isReversed={false}
   items={[
     {
@@ -621,6 +623,30 @@ const metadata = {
     <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
   </Fragment>
 </Steps2>
+
+
+<CallToAction
+actions={[
+  {
+    variant: 'primary',
+    text: 'Agenda una llamada',
+    href: 'https://form.jotform.com/250611771078052',
+    target: '_blank',
+    icon: 'tabler:phone',
+    classes: { class:'apuntamos-llamada' },
+  },
+]}
+>
+<Fragment slot="title">
+  ¿Quieres saber más?
+</Fragment>
+<Fragment slot="subtitle">
+  Si teneis cualquier duda o os interesa tener más información, no dudéis en contactar con nosotros. Estaremos encantados de atenderos.
+</Fragment>
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</CallToAction>
 
   <!-- Pricing Widget ******************* -->
 
@@ -659,7 +685,7 @@ const metadata = {
             description: 'Nos apuntamos a todos los talleres',
           },
           {
-            description: 'Videos de soporte con meditaciones guiadas',
+            description: 'Vídeos de soporte con meditaciones guiadas',
           },
         ],
         callToAction: {
@@ -702,7 +728,7 @@ const metadata = {
             description: 'De abril a agosto',
           },
           {
-            description: 'Videos de soporte con meditaciones guiadas',
+            description: 'Vídeos de soporte con meditaciones guiadas',
           },
           {
             description: 'Dos sesiones de acompañamiento individual',
@@ -742,7 +768,7 @@ const metadata = {
         icon: 'tabler:message-circle',
         callToAction: {
           target: '_blank',
-          text: 'Envia whatsapp',
+          text: 'Envía Whatsapp',
           href: 'https://wa.me/34680760473',
           classes: { class:'whats-ado' },
           variant: 'link',
@@ -753,7 +779,7 @@ const metadata = {
         icon: 'tabler:message-circle',
         callToAction: {
           target: '_blank',
-          text: 'Envia whatsapp',
+          text: 'Envía Whatsapp',
           href: 'https://wa.me/34627591609',
           classes: { class:'whats-ananda' },
           variant: 'link',
