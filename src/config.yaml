@@ -1,5 +1,5 @@
 site:
-  name: Sexo con K-Alma
+  name: Tantra para parejas
   site: 'https://tantraparaparejas.com/'
   base: '/'
   trailingSlash: false
@@ -9,16 +9,16 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Sexo con K-Alma
-    template: '%s — Sexo con K-Alma'
+    default: Tantra para parejas
+    template: '%s — Tantra para parejas'
   description: "significa incluir la meditación en la intimidad y en la sexualidad, significa recordar y recuperar el amor, la relajación y el gozo en la relación."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Sexo con K-Alma
+    site_name: Tantra para parejas
     images:
-      - url: '/images/SexoConKAlma.webp'
+      - url: '/images/TantraParaParejas.webp'
         width: 1024
         height: 683
     type: website
